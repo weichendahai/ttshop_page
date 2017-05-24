@@ -1,0 +1,350 @@
+body{
+	background: #f2f2f2;
+}
+.gotocomment{
+	width: 100%;
+    height: 1.1rem;
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE;
+    line-height: 1.1rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fe547b;
+    font-weight: bold;
+}
+.gotocomment span{
+	font-size: 0.32rem;
+    margin-right: 0.3rem;
+}
+.remind{
+	width: 100%;
+	text-align: center;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #c1c1c1;
+	background: #f2f2f2;
+}
+.bigimg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	display: none;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+.bigimg img{
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	
+}
+.top{
+	width: 100%;
+	background: #fff;
+	height: auto;
+	padding-top:0.6rem;
+	margin-bottom: 0.2rem;
+}
+.top .touxiang{
+	width: 1.7rem;
+	height: 1.7rem;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.top .touxiang img{
+	width: 100%;
+}
+.top .name-rank{
+	width: 100%;
+	height: 0.8rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.32rem;
+	font-weight: bold;
+}
+.top .name-rank span{
+	font-size: 0.24rem;
+	margin-left: 0.2rem;
+	color: #f5a517;
+}
+.top .money{
+	height: 0.4rem;
+	line-height: 0.4rem;
+	width: 100%;
+	text-align: center;
+	color: #fe547b;
+}
+.top .chenghao{
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color: #666666;
+}
+.nummber{
+	width: 100%;
+	height: 0.7rem;
+	border-bottom: 1px solid #EEEEEE;
+	background: #fff;
+	line-height: 0.7rem;
+	text-indent: 0.6rem;
+	color: #a5a5a5;
+}
+.main{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 1.1rem;
+	overflow: scroll;
+	border-top: 1px solid #EEEEEE;
+}
+.main .listdetails{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	background: #fff;
+}
+.main .listdetails .details-top{
+	width: 100%;
+	height: 1rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+.main .listdetails .details-top img{
+	display: block;
+	float: left;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	margin: 0.2rem 0;
+}
+.main .listdetails .details-top .name{
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.24rem;
+	margin-left: 0.3rem;
+	font-weight: bold;
+}
+.main .listdetails .details-top .medal{
+	display: block;
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.24rem;
+	width: 0.56rem;
+	margin-left: 0.4rem;
+}
+.main .listdetails .details-top .age{
+	display: block;
+	float: left;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	text-align: center;
+	width: 0.8rem;
+	background: #fe547b;
+	border-radius: 0.3rem;
+	margin: 0.35rem 0.2rem ;
+	color: #fff;
+	
+}
+.main .listdetails .details-top .age span{
+	display: block;
+	transform: scale(0.8);
+}
+.main .listdetails .details-top .yongjin{
+	height: 1rem;
+	float: right;
+	line-height: 1rem;
+	color: #fe547b;
+}
+.main .listdetails .details-top .yongjin span{
+	
+}
+.main .listdetails .details-top dl{
+	width: 0.7rem;
+	height: 1rem;
+	float: right;
+}
+.main .listdetails .details-top dt{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color: #fe547b;
+	font-size: 0.36rem;
+}
+.main .listdetails .details-top dd{
+	width: 100%;
+	height: 0.3rem;
+	text-align: center;
+	color: #aca9a9;
+	
+}
+.main .listdetails .details-center .fenshu{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+}
+.main .listdetails .details-center .fenshu .star{
+	height: 0.8rem;
+	float: left;
+}
+.main .listdetails .details-center .fenshu .star img{
+	display: block;
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin: 0.28rem 0;
+	margin-right: 0.2rem;
+}
+.main .listdetails .details-center .fenshu .scroe{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #ff6d8e;
+	float: left;
+}
+.main .listdetails .details-center .fenshu .time{
+	float: right;
+	height: 0.8rem;
+	font-size: 0.24rem;
+	line-height: 0.8rem;
+	margin-left: 0.5rem;
+	color: #aca9a9;
+}
+.main .listdetails .details-center .fenshu .name{
+	float: left;
+	height: 0.8rem;
+	font-size: 0.28rem;
+	line-height: 0.8rem;
+	color: #a1a1a1;
+}
+.youdian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.youdian span{
+	color: #a1a1a1;
+}
+.quedian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.quedian span{
+	color: #a1a1a1;
+}
+.pic-vid{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.pic-vid .imgdiv{
+	width: 30%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #e8e8e8;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.pic-vid .imgdiv:nth-child(3){
+	margin-right: 0;
+}
+.pic-vid .imgdiv:nth-child(6){
+	margin-right: 0;
+}
+.pic-vid img{
+	display: block;
+}
+.xinghao{
+	width: 100%;
+	height: 0.8rem;
+}
+.xinghao p{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #b4b1b1;
+	float: left;
+}
+.xinghao .tongkuan{
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	width: 2.5rem;
+	margin-left: 0.2rem;
+}
+.xinghao span{
+	display: block;
+	float: right;
+	text-align: right;
+	color: #b4b1b1;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin-left: 0.2rem;
+}
+
+.tongkuan{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.product{
+	background: #fff;
+	width: 100%;
+	height: 1.88rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.44rem 0.6rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.product img{
+	display: block;
+	width: 1rem;
+	float: left;
+	margin-right: 0.4rem;
+}
+.product .center{
+	height: 1rem;
+	flex: 1;
+	-webkit-flex: 1;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.product h3{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	font-size: 0.28rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.product p{
+	height: 0.6rem;
+	line-height: 0.6rem;
+	color: #c7c7c7;
+}
+.product p a{
+	color: #fc94ac;
+}

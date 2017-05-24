@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>全部商品</title>
+		<link rel="stylesheet" type="text/css" href="../common/common.css"/>
+		<script type="text/javascript" src="../common/rem.js"></script>
+		<script type="text/javascript" src="../common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../common/common.js"></script>
+		<style type="text/css">
+			section{
+				width: 100%;
+				position: absolute;
+				left: 0;
+				top: 1.1rem;
+				bottom: 0;
+				overflow:scroll;
+				border-top: 1px solid #eeeeee;
+				background: #fff;
+			}
+			.left{
+				float: left;
+				height: 100%;
+				width: 30%;
+				background: #f3f3f3;
+				font-weight: bold;
+			}
+			.right{
+				float: right;
+				height: 100%;
+				width: 70%;
+				background: #fff;
+				position: relative;
+			}
+			.right ul{
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				display: none;
+			}
+			.right ul li{
+				width: 100%;
+				height: 1rem;
+				line-height: 1rem;
+				text-indent: 0.6rem;
+			}
+			.left li{
+				height: 1rem;
+				line-height: 1rem;
+				text-align: center;
+				width: 100%;
+			}
+			.native{
+				color: #FE547B;
+				background: #FFF;
+			}
+			.right .block{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<span class="iconfont goback">&#xe604;</span>全部商品
+		</header>
+		<section>
+			<ul class="left">
+				<li class="native">护肤</li>
+				<li>彩妆</li>
+				<li>香氛</li>
+				<li>美发</li>
+				<li>美体/美甲</li>
+				<li>个体护理</li>
+				<li>男士</li>
+				<li>其他</li>
+			</ul>
+			<div class="right">
+				<ul class="block">
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+				<ul>
+					
+				</ul>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		var user_id = localStorage.getItem("user_id");
+		$(".left li").click(function(){
+			var index = $(this).index();
+			$(".left li").removeClass("native");
+			$(this).addClass("native");
+			$(".right ul").removeClass("block");
+			$(".right ul").eq(index).addClass("block");
+		});
+		$(".right ul").delegate("li","click",function(){
+			var searchName = "";
+			var category_id = $(this).attr("category_id");
+			window.location.href = "../searchresult.html?searchName="+searchName+"&category_id="+category_id;
+		})
+ 		$.ajax({
+			type: ajaxtype,
+			url: search,
+			dataType: "jsonp",
+			data:{
+				user_id:user_id,
+				keyword:"",
+				order_userful:0,
+				order_count:1,
+				category_id:0,
+				page_no:0
+			},
+			contentType: "application/json",
+			jsonp: "jsonpCallback",
+			jsonpCallback:"search",
+			success: function(data){
+				console.log(data)
+				if(data.result == 0){
+					var str = '';
+					for(var i=0;i<data.content.categorys.length;i++){
+						var fenleistr = '';
+						for(var j =0;j<data.content.categorys[i].subs.length;j++){
+							fenleistr+='<li category_id="'
+										+data.content.categorys[i].subs[j].category_id+'">'
+										+decodeURI(data.content.categorys[i].subs[j].category_name)+'</li>'
+										//console.log(decodeURI(data.content.categorys[i].subs[j].category_name))
+						}
+						$(".right").find("ul").eq(i).html(fenleistr)
+					}
+				}	
+			},
+			error: function(){
+				new Toast({context:$('body'),message:'网络故障'}).show();
+			}
+		})
+	</script>
+</html>

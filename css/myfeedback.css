@@ -1,0 +1,167 @@
+section.mui-content{
+	position: absolute;
+	left: 0;
+	top: 1.1rem;
+	bottom: 1.4rem;
+}
+.mui-table-view{
+	background: #efeff4;
+}
+.mui-table-view:after{
+	background: none;
+}
+.bigimg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	display: none;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+.bigimg img{
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	
+}
+.footer{
+	width: 100%;
+	background: #fe547b;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.36rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.box{
+	background: #fff;
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.2rem;
+}
+.box .boxTop{
+	display: flex;
+	display: -webkit-flex;
+	font-size: 12px;
+	line-height: 0.36rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.6rem;
+}
+.box .boxTop .boxTopLeft{
+	color: #8d8d8d;
+}
+.box .boxTop .boxTopRight{
+	flex: 1;	
+}
+.ellipsis{
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.box .boxCenter{
+	width: 100%;
+	font-size: 12px;
+	line-height: 0.36rem;
+	display: none;
+}
+.box .boxCenter .one{
+	width: 100%;
+	height: auto;
+	display: flex;
+	display: -webkit-flex;
+	border-bottom: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.6rem;
+}
+.box .boxCenter .one .oneleft{
+	filter:alpha(opacity=0);   
+    -moz-opacity:0;   
+    -khtml-opacity: 0;   
+    opacity: 0;   
+}
+.box .boxCenter .one .oneright{
+	flex: 1;
+}
+.box .boxCenter .one .oneright img{
+	display: block;
+	width: 2.2rem;
+	height: 2.2rem;
+}
+.box .boxCenter .two{
+	width: 100%;
+	height: auto;
+	color: #000000;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.6rem;
+}
+
+.box .boxCenter .twomy{
+	width: 100%;
+	height: auto;
+	padding: 0.2rem 0;
+}
+.box .boxCenter .twomy p{
+	color: #fe547b;
+	font-size: 12px;
+	line-height: 0.4rem;
+	margin: 0;
+}
+.box .boxCenter .twomy img{
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-left: 60px;
+}
+.box .boxCenter .twoserver{
+	width: 100%;
+	height: auto;
+	overflow: scroll;
+}
+.box .boxCenter .twoserver p{
+	color: darkgreen;
+	font-size: 12px;
+	line-height: 0.4rem;
+}
+.box .boxCenter .twoserver img{
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-left: 60px;
+}
+.box .boxBottom{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	border-top: 1px solid #e8e8e8;
+	height: 0.6rem;
+}
+.box .boxBottom span{
+	float: right;
+	display: block;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding-left: 0.5rem;
+	font-size: 12px;
+}
+.box .boxBottom .weidu{
+	color: #fe547b;
+}
+.box .boxBottom .yidu{
+	color: #666;
+}
+.box .boxBottom .reply{
+	color: #fe547b;
+}

@@ -1,0 +1,460 @@
+#pullrefresh{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0.9rem;
+	top: 1.1rem;
+	border-top: 1px solid #eeeeee;
+	overflow: scroll;
+	color: #000;
+}
+.mui-table-view{
+	background: #f2f2f2;
+}
+.footer{
+	width: 100%;
+	height: 0.9rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+	border-top: 1px solid #e8e8e8;
+	color: #fff;
+	display: flex;
+	display: -webkit-flex;
+}
+.footer li{
+	flex: 1;
+	-webkit-flex: 1;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	background: #fe547b;
+}
+.productdetails{
+	width: 100%;
+	height: auto;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-bottom: 1px solid #E8E8E8;
+	background:#fff;
+}
+.productdetails .productdetails-product{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+}
+.productdetails .productdetails-productLeft{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 0.2rem;
+}
+.productdetails .productdetails-productLeft img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.productdetails .productdetails-productRight{
+	float: right;
+	flex: 1;
+	-webkit-flex: 1;
+	min-height: 2rem;
+}
+.productdetails .productdetails-productRight .productdetails-productitle{
+	width: 100%;
+	height: auto;
+	line-height: 0.36rem;
+	color: #000;
+	font-family: "微软雅黑";
+}
+.productdetails .productdetails-productRight .productdetails-productprice{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #FE547B;
+}
+.productdetails .productdetails-productRight .productdetails-productscore{
+	width: 100%;
+	height: 0.3rem;
+}
+.productdetails .productdetails-productRight .productdetails-productscore span{
+	display: block;
+	float: left;
+	height: 0.3rem;
+	width: 0.3rem;
+	margin: 0 0.2rem 0 0;
+}
+.productdetails .productdetails-productRight .productdetails-productscore span img{
+	display: block;
+	width: 100%;
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 12px;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	margin-left: -10%;
+	color: #c6c6c6;
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment span{
+	display: block;
+	float: left;
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment span:nth-child(2){
+	width: 0.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment span:nth-child(4){
+	float: right;
+	color: #666;
+	margin-right: -20%;
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment span:nth-child(4) a{
+	display: block;
+	float: right;
+	font-weight: bold;
+	margin-left: 0.1rem;
+	transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+	transition: 0.2s;
+	
+}
+.productdetails .productdetails-productRight .productdetails-productbuycomment span:nth-child(4) a.open{
+	transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+	transition: 0.2s;
+}
+.productgongxiao{
+	line-height: 0.4rem;
+	width: 100%;
+	height: auto;
+	background: #e8e8e8;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem;
+	font-size: 12px;
+	color: #888;
+	display: none;
+	margin-top: 0.2rem;
+}
+.procuctdistribution{
+	width: 100%;
+	background:#fff;
+}
+.productcommentitle{
+	margin-top: 0.2rem;
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	border-top: 1px solid #e8e8e8;
+	text-indent: 0.2rem;
+	line-height: 0.8rem;
+	font-weight: bold;
+}
+.productcommentitle span{
+	color: #FE547B;
+}
+.xinghaobox{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.xinghao1{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.2rem ;
+	overflow: hidden;
+}
+.xinghao1 .title{
+	height:0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.xinghao1 span{
+	display: block;
+	float: left;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	padding: 0 0.2rem;
+	border: 1px solid #b9b9b9;
+	border-radius: 0.26rem;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.xinghao1 span:nth-child(2){
+	background: #fe547b;
+	color: #fff;
+	border-color: #fe547b;
+	
+}
+.procuctdistribution{
+	width: 100%;
+	height: auto;
+	padding: 0 0.2rem;
+}
+.procuctdistribution .title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.procuctdistribution p{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+}
+.procuctdistribution p span{
+	
+	display: block;
+	float: left;
+	color: #666666;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.procuctdistribution p i{
+	display: block;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	font-style: normal;
+}
+.procuctdistribution p a{
+	display: block;
+	float: left;
+	height: auto;
+	flex: 1;
+}
+/*点评*/
+.share{
+	height: 0.5rem;
+	line-height: 0.5rem;
+	color: #fe547b;
+	position: absolute;
+	right: 0;
+	bottom: 0.26rem;
+}
+.main .listdetails{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.2rem;
+	background: #fff;
+	border-top: 1px solid #e8e8e8;
+	margin-bottom: 0.1rem;
+	position: relative;
+}
+.main .listdetails .details-top{
+	width: 100%;
+	height: 1rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+.main .listdetails .details-top img{
+	display: block;
+	float: left;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	margin: 0.2rem 0;
+}
+.main .listdetails .details-top .name{
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.24rem;
+	margin-left: 0.3rem;
+	font-weight: bold;
+}
+.main .listdetails .details-top .medal{
+	display: block;
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.24rem;
+	width: 0.56rem;
+	margin-left: 0.4rem;
+}
+.main .listdetails .details-top .age{
+	display: block;
+	float: left;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	text-align: center;
+	width: 0.8rem;
+	background: #fe547b;
+	border-radius: 0.3rem;
+	margin: 0.35rem 0 ;
+	color: #fff;
+	margin-left: 0.4rem;
+}
+.main .listdetails .details-top .age span{
+	display: block;
+	transform: scale(0.8);
+	
+}
+.main .listdetails .details-top .yongjin{
+	height: 1rem;
+	float: right;
+	line-height: 1rem;
+	color: #fe547b;
+}
+.main .listdetails .details-top .yongjin span{
+	
+}
+.main .listdetails .details-top dl{
+	width: 0.7rem;
+	height: 1rem;
+	float: right;
+}
+.main .listdetails .details-top dt{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color: #fe547b;
+	font-size: 0.36rem;
+}
+.main .listdetails .details-top dd{
+	width: 100%;
+	height: 0.3rem;
+	text-align: center;
+	color: #aca9a9;
+	
+}
+.main .listdetails .details-center{
+	position: relative;
+}
+.main .listdetails .details-center .fenshu{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	overflow: hidden;
+}
+.main .listdetails .details-center .fenshu .star{
+	display: block;
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin: 0.28rem 0;
+	margin-right: 0.2rem;
+}
+.main .listdetails .details-center .fenshu .time{
+	float: right;
+	height: 0.8rem;
+	font-size: 0.24rem;
+	line-height: 0.8rem;
+	margin-left: 0.5rem;
+	color: #aca9a9;
+}
+.main .listdetails .details-center .fenshu .name{
+	float: left;
+	height: 0.8rem;
+	font-size: 0.28rem;
+	line-height: 0.8rem;
+	color: #a1a1a1;
+}
+.nummber{
+	width: 100%;
+	height: 0.7rem;
+	border-bottom: 1px solid #EEEEEE;
+	background: #fff;
+	line-height: 0.7rem;
+	text-indent: 0.6rem;
+	color: #a5a5a5;
+}
+.youdian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.youdian span{
+	color: #a1a1a1;
+}
+.quedian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.quedian span{
+	color: #a1a1a1;
+}
+.pic-vid{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.pic-vid .imgdiv{
+	width: 30%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #e8e8e8;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.pic-vid .imgdiv:nth-child(3){
+	margin-right: 0;
+}
+.pic-vid .imgdiv:nth-child(6){
+	margin-right: 0;
+}
+.pic-vid img{
+	display: block;
+}
+.main .xinghao{
+	width: 100%;
+	height: 0.8rem;
+	padding: 0;
+}
+.main .xinghao p{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #b4b1b1;
+	float: left;
+}
+.main .xinghao .tongkuan{
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	width: 2.5rem;
+	margin-left: 0.2rem;
+}
+.main .xinghao span{
+	display: block;
+	float: right;
+	text-align: right;
+	color: #b4b1b1;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin-left: 0.2rem;
+}
+.main .xinghao span:nth-child(2){
+	font-size: 0.28rem;
+	color: #ff6588;
+}
+#comment{
+	position: relative;
+}
+.mui-content {
+	background: #fff;
+}
+.mui-scroll-wrapper{
+	top: 1.3rem;
+}
+.mui-table-view:after {
+	background-color: #fff;
+}
+.mui-table-view:before {
+	background-color: #fff;
+}

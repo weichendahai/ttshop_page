@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Ciao！Talk美妆商城</title>
+		<link rel="stylesheet" type="text/css" href="common/mui2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="common/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="common/mui.min.js"></script>
+		<script type="text/javascript" src="common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="common/jquery.fly.min.js"></script>
+		<script type="text/javascript" src="common/swiper.min.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="alljs2/allindex.min.js"></script>
+	</head>
+	<body>				
+		<div class="mask">
+			
+		</div>
+		<div class="changexinghao">
+			<div class="top">
+				<p></p><span>×</span>
+			</div>
+			<div class="center" style="width: 100%;">
+				
+			</div>
+			<div class="bottom">
+				<p></p><span>加入购物车</span>
+			</div>
+		</div>
+		<section id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron">
+			<!--搜索框开始-->
+            <div class="search">
+            	<div id="searchButton"/>
+        			<img src="img/search.png"/>
+            	</div>
+            	<input type="text" readonly="readonly" name="searchText" id="searchText" placeholder="搜索产品" />
+            </div>
+            <!--搜索框结束-->
+			<!--轮播图开始-->
+			<div class="lunbo swiper-container" >
+				<div class="swiper-wrapper" id="swiper-wrapper">
+					
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--轮播图结束-->
+			<!--分类列表开始-->
+			<div class="CategorylistALL">
+				<h6 class="CategorylistALL-title">产品分类<p class="last">查看全部</p></h6>
+			</div>
+			<div class="Categorylist">
+				<ul>
+					<dl>
+						<dt>
+							<span><img style="left: 0;top: 0;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>护肤</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -1.2rem;top: 0;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>彩妆</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -2.4rem;top: 0;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>香氛</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -3.6rem;top: 0;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>美发</dd>
+					</dl>
+				</ul>
+				<ul>
+					<dl>
+						<dt>
+							<span><img style="left: 0;top: -1.2rem;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>美体/美甲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -1.2rem;top: -1.2rem;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>个体护理</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -2.4rem;top: -1.2rem;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>男士</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img style="left: -3.6rem;top: -1.2rem;" src="img/fenlei.jpg"/></span>
+						</dt>
+						<dd>其他</dd>
+					</dl>
+				</ul>
+			</div>
+			<!--分类列表结束-->
+			<!--爆款列表开始-->
+				<div class="burstlist">
+					<h6 class="burstlist-title"><img src="img/fire.svg"/>俏说为您长草拔草<p class="last" qishu="-1">查看往期列表 ></p></h6>
+					<div id="burstlist">
+						
+					</div>
+					
+				</div>
+			</ul>
+		</div>
+			<!--爆款列表结束-->
+	</section>	
+			<!--footer开始-->
+		<footer >
+			<div class="Comment-List">
+				<dl class="comment">
+					<dt class="iconfont" style="color:#fe547b;">&#xe609;</dt>
+					<dd>点评</dd>
+				</dl>
+				<dl class="list">
+					<dt class="iconfont" style="color:#fba754;">&#xe63f;</dt>
+					<dd>榜单</dd>
+				</dl>
+			</div>
+			<ul>
+				<li>
+					<dl>
+						<dt class="iconfont" style="color: #FE547B;">
+							&#xe606;
+						</dt>
+						<dd>首页</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe62d;
+						</dt>
+						<dd>试用</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<div class="ComentList ">
+						<span class="iconfont">&#xe605;</span>
+					</div>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe654;
+						</dt>
+						<dd>购物车</dd>
+					</dl>
+					<span class="num">0</span>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe607;
+						</dt>
+						<dd>个人中心</dd>
+					</dl>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	
+	<script type="text/javascript">
+		getCodeForWechat();
+		var property_price_key =[];
+		var property_price_value =[];
+		var user_id = localStorage.getItem("user_id");
+		var evaluate_shared_id = Request.QueryString("evaluate_shared_id");
+		var page = 0;
+		var season =-1;//最新的一期
+		function hotitem(data){
+			console.log(data)
+			
+			var hotitemliststr = "";
+			if(data.result == 0){
+				
+				$(".burstlist-title .last").attr("season",data.content.season_no-1)
+				if(data.content.hot_items ==''){
+					hotitemliststr = '<img src ="img/kong.png" style="display:block;margin:0 auto;width:50%;"/><p style="text-align:center;height:1rem;line-height:1rem;">暂无爆款列表</p>'
+				}else{
+					for(var i=0;i<data.content.hot_items.length;i++){
+						var property_prices_keys = data.content.hot_items[i].property_prices_key;
+						var property_prices_values = data.content.hot_items[i].property_prices_value;
+						property_price_key.push(property_prices_keys);//规格价格
+						property_price_value.push(property_prices_values);//规格价格
+						hotitemliststr += '<div xinghaolength = "'+data.content.hot_items[i].propertys.length+'" class="burstlist-div"><div class="xinghaobox" style ="display:none;">'
+						//加上商品型号//////////////////////////////////////
+						var propertys = data.content.hot_items[i].propertys;
+						for(var j = 0;j<propertys.length;j++){
+							hotitemliststr+='<div class="xinghao1" property_key="'
+								+propertys[j].property_key+
+								'"><p class="title">选择'
+								+decodeURI(propertys[j].property_key_desc)+
+								'</p>'
+								for(var k = 0;k<propertys[j].values.length;k++){
+									if(k == 0){
+										hotitemliststr+='<span class="check" property_value="'
+										+propertys[j].values[k].property_value+
+										'">'
+										+decodeURI(propertys[j].values[k].property_desc)+
+										'</span>'
+									}else{
+										hotitemliststr+='<span property_value="'
+										+propertys[j].values[k].property_value+
+										'">'
+										+decodeURI(propertys[j].values[k].property_desc)+
+										'</span>'
+									}
+									
+								}
+							hotitemliststr+='</div>'
+							}
+						///////////////////////////////////////////////////
+						hotitemliststr +='</div><span class="item_id">'
+							+data.content.hot_items[i].item_id+
+							'</span><div class="top"><div class="left"><img src="'
+	                      	+data.content.hot_items[i].item_icon_addr+
+							'" onerror="this.src='+errorimg+';"/></div><div class="right"><p class="title">'
+							+decodeURI(data.content.hot_items[i].item_name)+
+							'</p>'
+						var starhalf = Math.round(data.content.hot_items[i].grade/10)%2;//半星
+						var staron = Math.floor(data.content.hot_items[i].grade/10/2);  
+						var staroff = 5-staron-starhalf;
+						hotitemliststr +='<div class="pingjia">'
+						for	(var j=0;j<staron;j++){
+							hotitemliststr +='<img src="img/star-on.png"/>'
+						}
+						if(starhalf == 1){//判断有没有半颗星
+							hotitemliststr +='<img src="img/star-half.png"/>'
+						}
+						if(staroff >0){//判断有没有星
+							for	(var j=0;j<staroff;j++){
+								hotitemliststr +='<img src="img/star-off.png"/>'
+							}
+						}
+						hotitemliststr +='<p><span>'
+							+data.content.hot_items[i].evaluate_count+
+							'</span>人评论</p></div><div class="dianpingshare"><div class="dianping" item_price_discount = "￥'+(data.content.hot_items[i].item_price_discount/100).toFixed(2)+'"><span class="iconfont">&#xe644;</span></div><div class="share"><span class="iconfont">&#xe615;</span></div></div><div class="shop"><p><i>￥</i><span>'
+							+(data.content.hot_items[i].price/100).toFixed(2)+
+							'</span></p></div><img class="addShoppingcar" src="img/addshoppingcar.svg"/></div></div><div class="bottom"><span><img class="shang" src="img/“.png"/></span><p>'
+							+decodeURI(data.content.hot_items[i].advantage)+
+							'</p><span><img class="xia" src="img/”.png"/></span></div></div>'
+					}
+				}
+				
+				if(page == 0){
+					$("#burstlist").html(hotitemliststr);
+				}else{
+					$("#burstlist").append(hotitemliststr);
+					
+					
+				}
+				var next_page_no = data.content.next_page_no;
+				if(next_page_no<0){
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh(true); //参数为true代表没有更多数据了。
+				}else{
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh(false); //参数为true代表没有更多数据了。
+				}
+				
+				
+				
+			}else{
+				$(".load").remove();
+				mui('#pullrefresh').pullRefresh().endPullupToRefresh(true); //参数为true代表没有更多数据了。
+				new Toast({context:$('body'),message:decodeURI(data.content)}).show();
+			}
+		}
+		//获取轮播图列表
+		$.ajax({
+			type: ajaxtype,
+			url: bannerurl,
+			dataType: "jsonp",
+			contentType: "application/json",
+			jsonp: "jsonpCallback",//键  没什么用
+			jsonpCallback:"banner",//键值    给后台的函数名
+			beforeSend:function(){},
+			success: function(data){
+				console.log(data)
+				var bannerstr =""; 
+				if(data.result == 0){
+					
+					for(var i=0;i<data.content.banners.length;i++){
+						bannerstr += '<div class="swiper-slide"><span class="item_id">'
+									+data.content.banners[i].item_id+
+								'</span><img class="swiper-lazy" data-src="'+
+								data.content.banners[i].poster_image_addr
+								+'" /><div class="swiper-lazy-preloader"></div></div>'
+					}
+					$("#swiper-wrapper").html(bannerstr)
+					var swiper = new Swiper('.swiper-container', {
+				        pagination: '.swiper-pagination',
+				        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+						observeParents:true,//修改swiper的父元素时，自动初始化swiper
+				        paginationClickable: true,
+				        spaceBetween: 0,
+				        centeredSlides: true,
+				        autoplay: 2500,
+				        autoplayDisableOnInteraction: false,
+				        lazyLoading : true
+				    });
+//					$('#swiper-wrapper img').each(function() {//图片缺省
+//						if (!this.complete || typeof this.naturalWidth == "undefined" || this.naturalWidth == 0) { 
+//							this.src = 'img/banner1.png'; 
+//						} 
+//					});
+//					
+				}else{
+					new Toast({context:$('body'),message:decodeURI(data.content)}).show();
+				}
+			},
+			error: function(){
+				//new Toast({context:$('body'),message:'网络错误'}).show();
+			}
+		});
+		
+		
+		$(".burstlist-title").on("tap",".last",function(){
+			//alert(season)
+			//mui('#pullrefresh').pullRefresh().refresh(true);
+			page = 0;
+			$("#burstlist .burstlist-div").remove();
+			if($(".burstlist-title .last").attr("qishu")==0){
+				season =-1;
+			}else{
+				season =$(".burstlist-title .last").attr("season");
+			}
+			if($(".burstlist-title .last").attr("qishu")==-1){
+				$(".burstlist-title .last").text("查看本期列表>");
+				$(".burstlist-title .last").attr("qishu",0)
+				
+				$.ajax({
+					type: ajaxtype,
+					url: hotitemlist,
+					dataType: "jsonp",
+					data:{"page_no":page,"season_no":season},
+					contentType: "application/json",
+					jsonp: "jsonpCallback",
+					jsonpCallback:"hotitem",
+					beforeSend:function(){
+						if(page ==0){
+							$("#burstlist").html("<p class='load'>加载中...</p>")
+						}
+					},
+					success: function(data){
+						
+					},
+					error: function(){
+						//new Toast({context:$('body'),message:'网络错误'}).show();
+					}
+				})
+			}else{
+				$(".burstlist-title .last").text("查看往期列表>")
+				$(".burstlist-title .last").attr("qishu",-1)
+				$.ajax({
+					type: ajaxtype,
+					url: hotitemlist,
+					dataType: "jsonp",
+					data:{"page_no":page,"season_no":season},
+					contentType: "application/json",
+					jsonp: "jsonpCallback",
+					jsonpCallback:"hotitem",
+					beforeSend:function(){
+						if(page ==0){
+							$("#burstlist").html("<p class='load'>加载中...</p>")
+						}
+					},
+					success: function(data){
+						
+					},
+					error: function(){
+						new Toast({context:$('body'),message:'网络错误'}).show();
+					}
+				})
+			}
+		})
+		//获取爆款列表
+		$.ajax({
+			type: ajaxtype,
+			url: hotitemlist,
+			dataType: "jsonp",
+			data:{"page_no":page,"season_no":season},
+			contentType: "application/json",
+			jsonp: "jsonpCallback",
+			jsonpCallback:"hotitem",
+			beforeSend:function(){
+				if(page ==0){
+					$("#burstlist").html("<p class='load'>加载中...</p>")
+				}
+			},
+			success: function(data){
+				
+			},
+			error: function(){
+				//new Toast({context:$('body'),message:'网络错误'}).show();
+			}
+		})
+		
+		
+	</script>
+</html>

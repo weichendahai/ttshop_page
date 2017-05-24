@@ -1,0 +1,494 @@
+body{
+	overflow: hidden;
+	background: #fff;
+	font-size: 12px;
+}
+.goback{
+	z-index: 1000;
+}
+
+/*底部*/
+header{
+	border: none;
+	padding: 0 0.8rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.foot{
+	width: 100%;
+	height: 1.3rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #ff6588;
+	
+}
+.foot li{
+	width: 50%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	float: left;
+	font-size: 0.36rem;
+}
+.foot li:nth-child(1){
+	color: #fff;
+	background:#ff6588;
+}
+.foot li:nth-child(2){
+	color:#ff6588;
+}
+/*导航*/
+.kinerNav{
+	width: 100%;
+	height: 1.1rem;
+	margin: 0 auto;
+	background: #fff;
+}
+.kinerNav li{
+	height: 1.1rem;
+	line-height: 1.1rem;
+	background: #fff;
+}
+/*中间*/
+.box{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-bottom: 2.5rem;
+	 border-top: 1px solid #EEEEEE;
+}
+.f2{
+	width: 100%;
+	height: 0.2rem;
+	background: #f2f2f2;
+}
+.kinerItem{
+	overflow: scroll;
+}
+.productImg{
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.1rem;
+}
+.productImg img{
+	display: block;
+	width: 100%;
+}
+.productName{
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	font-size: 0.28rem;
+	font-weight: bold;
+	text-indent: 0.6rem;
+	color: #000;
+}
+.productMoney{
+	width: 100%;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+}
+.productMoney .money{
+	float: left;
+	color:#fe547b;
+}
+.productMoney .buynum{
+	float: right;
+	color:#a0a0a0;
+}
+.yunfei{
+	width: 100%;
+	height: 0.8rem;
+	background: #f2f2f2;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	border-bottom: 1px solid #dadada;
+}
+.yunfei span:nth-child(1){
+	width: 0.9rem;
+}
+.yunfei span{
+	display: block;
+	float: left;
+	line-height: 0.8rem;
+	height: 0.8rem;
+	color: #b9b9b9;
+}
+.yunfei .money{
+	color: #000000;
+	font-weight: bold;
+}
+.shuoming{
+	width: 100%;
+	height: auto;
+	background: #f2f2f2;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	background: #f2f2f2;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	
+}
+.shuoming span:nth-child(1){
+	display: block;
+	width: 0.9rem;
+	line-height: 0.8rem;
+	height: 0.8rem;
+	color: #b9b9b9;
+}
+.shuoming .shuomings{
+	height: auto;
+	overflow: hidden;
+	flex: 1;
+}
+.shuoming .shuomings p{
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+}
+.shuoming .shuomings p a{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #fe5c81;
+	float: left;
+}
+.shuoming .shuomings p a:nth-child(2){
+	color: #000;
+	margin-left: 0.2rem;
+	margin-right: 0.4rem;
+}
+.xinghao1{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem ;
+	overflow: hidden;
+}
+.xinghao1 .title{
+	height:0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.xinghao1 span{
+	display: block;
+	float: left;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	padding: 0 0.2rem;
+	border: 1px solid #b9b9b9;
+	border-radius: 0.26rem;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.xinghao1 span:nth-child(2){
+	background: #fe547b;
+	color: #fff;
+	border-color: #fe547b;
+	
+}
+.productrenqi{
+	width: 100%;
+	height: 2.5rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem 0.2rem;
+}
+.productrenqi .title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.productrenqi p{
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	overflow: hidden;
+}
+.productrenqi p span{
+	
+	display: block;
+	float: left;
+	color: #666666;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.productrenqi p img{
+	display: block;
+	float: left;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 0.05rem 0.2rem 0 0;
+}
+.productrenqi p b{
+	font-weight: 100;
+}
+.productcanshu{
+	width: 100%;
+	height: auto;
+	padding: 0 0.6rem 0.2rem;
+}
+.productcanshu .title{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.productcanshu p{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+}
+.productcanshu p span{
+	
+	display: block;
+	float: left;
+	color: #666666;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.productcanshu p b{
+	font-weight: 100;
+	float: left;
+	display: block;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	min-width: 2.2rem;
+}
+.productcanshu p a{
+	display: block;
+	float: left;
+	height: auto;
+	flex: 1;
+}
+#details img{
+	width: 100%;
+}
+.main .listdetails{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+	background: #fff;
+	margin-bottom: 0.2rem;
+}
+.main .listdetails .details-top{
+	width: 100%;
+	height: 1rem;
+	border-bottom: 1px solid #EEEEEE;
+}
+.main .listdetails .details-top img{
+	display: block;
+	float: left;
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	margin: 0.2rem 0;
+}
+.main .listdetails .details-top .name{
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.24rem;
+	margin-left: 0.3rem;
+	font-weight: bold;
+}
+.main .listdetails .details-top .medal{
+	display: block;
+	float: left;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.24rem;
+	width: 0.56rem;
+	margin-left: 0.4rem;
+}
+.main .listdetails .details-top .age{
+	display: block;
+	float: left;
+	height: 0.28rem;
+	line-height: 0.28rem;
+	text-align: center;
+	width: 0.8rem;
+	background: #fe547b;
+	border-radius: 0.3rem;
+	margin: 0.35rem 0 ;
+	color: #fff;
+	
+}
+.main .listdetails .details-top .age span{
+	display: block;
+	transform: scale(0.8);
+}
+.main .listdetails .details-top .yongjin{
+	height: 1rem;
+	float: right;
+	line-height: 1rem;
+	color: #fe547b;
+}
+.main .listdetails .details-top .yongjin span{
+	
+}
+.main .listdetails .details-top dl{
+	width: 0.7rem;
+	height: 1rem;
+	float: right;
+}
+.main .listdetails .details-top dt{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.7rem;
+	text-align: center;
+	color: #fe547b;
+	font-size: 0.36rem;
+}
+.main .listdetails .details-top dd{
+	width: 100%;
+	height: 0.3rem;
+	text-align: center;
+	color: #aca9a9;
+	
+}
+.main .listdetails .details-center .fenshu{
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	overflow: hidden;
+}
+.main .listdetails .details-center .fenshu .star{
+	display: block;
+	float: left;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin: 0.28rem 0;
+	margin-right: 0.2rem;
+}
+.main .listdetails .details-center .fenshu .time{
+	float: right;
+	height: 0.8rem;
+	font-size: 0.24rem;
+	line-height: 0.8rem;
+	margin-left: 0.5rem;
+	color: #aca9a9;
+}
+.main .listdetails .details-center .fenshu .name{
+	float: left;
+	height: 0.8rem;
+	font-size: 0.28rem;
+	line-height: 0.8rem;
+	color: #a1a1a1;
+}
+.nummber{
+	width: 100%;
+	height: 0.7rem;
+	border-bottom: 1px solid #EEEEEE;
+	background: #fff;
+	line-height: 0.7rem;
+	text-indent: 0.6rem;
+	color: #a5a5a5;
+}
+.youdian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.youdian span{
+	color: #a1a1a1;
+}
+.quedian{
+	line-height: 0.42rem;
+	padding-bottom: 0.26rem;
+	width: 100%;
+	font-weight: bold;
+}
+.quedian span{
+	color: #a1a1a1;
+}
+.pic-vid{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.pic-vid img{
+	display: block;
+	height: 2rem;
+	width: 2rem;
+	border: 1px solid #eee;
+	margin-right: 0.4rem;
+	float: left;
+}
+.main .xinghao{
+	width: 100%;
+	height: 0.8rem;
+	padding: 0;
+}
+.main .xinghao p{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #b4b1b1;
+	float: left;
+}
+.main .xinghao .tongkuan{
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	width: 2.5rem;
+	margin-left: 0.2rem;
+}
+.main .xinghao span{
+	display: block;
+	float: right;
+	text-align: right;
+	color: #b4b1b1;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	margin-left: 0.2rem;
+}
+.main .xinghao span:nth-child(2){
+	font-size: 0.28rem;
+	color: #ff6588;
+}
+#comment{
+	position: relative;
+}
+.mui-content {
+	background: #fff;
+}
+.mui-scroll-wrapper{
+	top: 1.3rem;
+}
+.mui-table-view:after {
+	background-color: #fff;
+}
+.mui-table-view:before {
+	background-color: #fff;
+}
+.gotocomment{
+	width: 100%;
+    height: 1.1rem;
+    background: #fff;
+    border-bottom: 1px solid #EEEEEE;
+    line-height: 1.1rem;
+    text-align: center;
+    font-size: 0.28rem;
+    color: #fe547b;
+    font-weight: bold;
+}
+.gotocomment span{
+	font-size: 0.32rem;
+    margin-right: 0.3rem;
+}

@@ -1,0 +1,142 @@
+html,body{
+	background: #f2f2f2;
+}
+.head{
+	width: 100%;
+	height: 1.1rem;
+	background: #fff;
+}
+.head .goback{
+	display: block;
+	float: left;
+	width: 0.8rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.head .tiwen{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	float: right;
+	margin: 0.35rem 0.6rem 0 0;
+	border: 1px solid #000;
+	color: #000;
+	line-height: 0.4rem;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 0.28rem;
+}
+.head h2{
+	float: left;
+	margin: 0;
+	font-size: 0.36rem;
+	line-height: 1.1rem;
+}
+.top{
+	width: 100%;
+	background: #fff;
+	padding-top:0.4rem ;
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 0.4rem;
+}
+.top .touxiang{
+	overflow: hidden;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 1.74rem;
+	height: 1.74rem;
+	position: relative;
+}
+.top #imgTest{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+.top .touxiang .sex{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0.12rem;
+	bottom: 0.16rem;
+	font-size: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	color: #bab7b7;
+	border-radius: 50%;
+}
+.top .touxiang img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.top .name{
+	width: 100%;
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-weight: bold;
+}
+.top .chenghao {
+	height: 0.45rem;
+	color: #787878;
+	text-align: center;
+}
+.li{
+	width: 100%;
+	height: 0.7rem;
+	border-bottom: 1px solid #eeeeee;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 0.6rem;
+}
+.li p{
+	height: 0.7rem;
+	line-height: 0.7rem;
+	color: #666666;
+	margin: 0;
+}
+.li .left{
+	float: left;
+	font-size: 0.26rem;
+}
+.li .right{
+	float: right;
+}
+.li .iconfont{
+	float: right;
+	display: block;
+	width: 0.4rem;
+	height: 0.7rem;
+	line-height: 0.7rem;
+	text-align: right;
+	color: #b1aeae;
+}
+.VIPLevel .right{
+	color: #ff6588;
+}
+.fuzhi{
+	margin-bottom: 0.4rem;
+}
+.exit{
+	width: 100%;
+	text-align: center;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background: #ff6588;
+	color: #fff;
+	font-size: 0.36rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
