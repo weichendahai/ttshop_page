@@ -23,12 +23,12 @@
 	    return null;
 	}
 	//随机数
-	function RndNum(n){   
-		var rnd="";       
-		for(var i=0;i<n;i++)       
-		rnd+=Math.floor(Math.random()*10);   
-		return rnd;       
-	}   
+	function RndNum(n){
+		var rnd="";
+		for(var i=0;i<n;i++)
+		rnd+=Math.floor(Math.random()*10);
+		return rnd;
+	}
 	function imgChange(e) {//上传图片
 		var size = e.target.files[0].size
 		if(size<=10485760){
@@ -59,30 +59,30 @@
 								setTimeout(function(){
 									$("#showImage").attr("src",data.content);
 									$(".xin").css("display","none");
-									new Toast({context:$('body'),message:'上传完成'}).show(); 
+									new Toast({context:$('body'),message:'上传完成'}).show();
 								},500)
 							}else{
-								new Toast({context:$('body'),message:data.content}).show(); 
+								new Toast({context:$('body'),message:data.content}).show();
 							}
 						},
 						error: function(){
-							new Toast({context:$('body'),message:'上传失败'}).show(); 
+							new Toast({context:$('body'),message:'上传失败'}).show();
 						}
-					});	
+					});
 		        };
 		    })(e.target.files[0]);
 		    reader.readAsDataURL(e.target.files[0]);
 		}else{
-			new Toast({context:$('body'),message:'图片超过10兆不可上传'}).show(); 
+			new Toast({context:$('body'),message:'图片超过10兆不可上传'}).show();
 		}
-	   	
+
     }
-	
+
 	//环境
 	var huanjing = "h5";
 	var ajaxtype = "get";
-	
-	
+
+
 	//定义接口
 	//上传图片接口
 	var UploadServlet = "http://h5.ciaotalking.com/upload/UploadServlet";
@@ -100,7 +100,7 @@
 	var requestrefund="http://"+huanjing+".ciaotalking.com/server/requestrefund"
 	//获取退款记录列表
 	var getrefundlist="http://"+huanjing+".ciaotalking.com/server/getrefundlist";
-	//获取点评记录列表  
+	//获取点评记录列表
 	var getuserevaluatelist= "http://"+huanjing+".ciaotalking.com/server/getuserevaluatelist";
 	//删除收货地址接口
 	var removeaddress= "http://"+huanjing+".ciaotalking.com/server/removeaddress";
@@ -201,7 +201,7 @@
 				}
 			},
 			error: function(){
-				new Toast({context:$('body'),message:'网络故障'}).show(); 
+				new Toast({context:$('body'),message:'网络故障'}).show();
 			}
 		})
 	}
@@ -250,7 +250,7 @@
 				}
 			},
 			error: function(){
-				new Toast({context:$('body'),message:'网络故障'}).show(); 
+				new Toast({context:$('body'),message:'网络故障'}).show();
 			}
 		})
 		wx.ready(function(){
@@ -265,7 +265,7 @@
 			        $(".wxmaskimg").remove();
 			         new Toast({context:$('body'),message:'分享成功'}).show();
 			    },
-			    cancel: function () { 
+			    cancel: function () {
 			    	$(".wxmask").remove()
 			    	$(".wxmaskimg").remove();
 			    }
@@ -326,7 +326,7 @@
 				}
 			},
 			error: function(){
-				new Toast({context:$('body'),message:'网络故障'}).show(); 
+				new Toast({context:$('body'),message:'网络故障'}).show();
 			}
 		})
 		wx.ready(function(){
@@ -341,7 +341,7 @@
 			        $(".wxmaskimg").remove();
 			        new Toast({context:$('body'),message:'分享成功'}).show();
 			    },
-			    cancel: function () { 
+			    cancel: function () {
 			    	$(".wxmask").remove()
 			    	$(".wxmaskimg").remove();
 			    	//new Toast({context:$('body'),message:'分享失败'}).show();
@@ -370,50 +370,50 @@
 	}
 	//微信登录
 	function getCodeForWechat(){
-//	    var weChatCode=getQueryString("code");
-//	    	//alert(weChatCode)
-//		    if(weChatCode==null){//如果参数没获取到重新登录
-//		        var backUrl=encodeURIComponent(location.href);//解码当前地址
-//		        //重新回到登录页面
-//		        location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid="+appid+"&redirect_uri="+backUrl+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect";
-//		    }else{//如果参数获取到请求ajax获取用户ID和购物车数量
-//		    	if(weChatCode!=localStorage.getItem("weChatCodesession")){//如果两次code不相同
-//	    			localStorage.setItem("weChatCodesession",weChatCode)
-//		            $.ajax({
-//		                type:ajaxtype,
-//		                url:wxLogin,
-//		                dataType:"jsonp",
-//		                data:{
-//		                	code:weChatCode
-//		                },
-//		                contentType: "application/json",
-//		                jsonp: "jsonpCallback",
-//						jsonpCallback:"wxLogin",
-//		                success:function (data){
-//		                	//alert(data.result)
-//		                    if(data.result == 0){
-//		                        //获取用户基本信息
-//		                      
-//		                   		$("footer .num").text(data.item_count)
-//								localStorage.setItem("shoppingcar",data.item_count);
-//								localStorage.setItem("user_id",data.user_id);
-//								//alert(data.user_id)
-//		                    }else{
-//		                         new Toast({context:$('body'),message:"暂时无法登录，请您退出后重试!"}).show();
-//		                    }
-//		                },
-//		                error:function (){
-//		                    new Toast({context:$('body'),message:"暂时无法登录，请您退出后重试~"}).show(); 
-//		                },
-//		            });    
-//		        }
-//		    }
+	    var weChatCode=getQueryString("code");
+	    	//alert(weChatCode)
+		    if(weChatCode==null){//如果参数没获取到重新登录
+		        var backUrl=encodeURIComponent(location.href);//解码当前地址
+		        //重新回到登录页面
+		        location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid="+appid+"&redirect_uri="+backUrl+"&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect";
+		    }else{//如果参数获取到请求ajax获取用户ID和购物车数量
+		    	if(weChatCode!=localStorage.getItem("weChatCodesession")){//如果两次code不相同
+	    			localStorage.setItem("weChatCodesession",weChatCode)
+		            $.ajax({
+		                type:ajaxtype,
+		                url:wxLogin,
+		                dataType:"jsonp",
+		                data:{
+		                	code:weChatCode
+		                },
+		                contentType: "application/json",
+		                jsonp: "jsonpCallback",
+						jsonpCallback:"wxLogin",
+		                success:function (data){
+		                	//alert(data.result)
+		                    if(data.result == 0){
+		                        //获取用户基本信息
+
+		                   		$("footer .num").text(data.item_count)
+								localStorage.setItem("shoppingcar",data.item_count);
+								localStorage.setItem("user_id",data.user_id);
+								//alert(data.user_id)
+		                    }else{
+		                         new Toast({context:$('body'),message:"暂时无法登录，请您退出后重试!"}).show();
+		                    }
+		                },
+		                error:function (){
+		                    new Toast({context:$('body'),message:"暂时无法登录，请您退出后重试~"}).show();
+		                },
+		            });
+		        }
+		    }
 	}
-	
+
 $(function(){
 	//顶部返回按钮
 	$("body .goback").click(function(){
-		
+
 		window.history.go(-1)
 		//return false
 	})
@@ -441,7 +441,7 @@ $(function(){
 			$(".ComentList").addClass("button1");
 			$(".footermask").css("display","none");
 		}
-		
+
 	})
 	$("footer li").eq(3).click(function(){
 		window.location.href = "gouwuche.html"
@@ -456,5 +456,5 @@ $(function(){
 	$("footer .list").click(function(){
 		window.location.href = "List.html"
 	})
-	
+
 })
