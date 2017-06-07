@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Ciao！Talk 九分优选</title>
+		<link rel="stylesheet" type="text/css" href="common/mui2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="common/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="common/mui.min.js"></script>
+		<script type="text/javascript" src="common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="common/jquery.fly.min.js"></script>
+		<script type="text/javascript" src="common/swiper.min.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="common/common.js"></script>
+		<script type="text/javascript" src="common/rem.js"></script>
+		<script type="text/javascript" src="common/androidToast.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>				
+		<div class="mask">
+			
+		</div>
+		<div class="changexinghao">
+			<div class="top">
+				<span>x</span>
+				<div class="topimg">
+					<img src=""/>
+				</div>
+				<div class="topright">
+					<p class="title"></p>
+					<p class="money"></p>
+				</div>
+			</div>
+			<div class="center">
+				
+			</div>
+			<div class="bottom">
+				<span>加入购物车</span>
+			</div>
+		</div>
+		<!--header开始-->
+		<header>
+			Ciao!Talking 九分优选
+		</header>
+		<section id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron">
+			<!--搜索框开始-->
+            <div class="search">
+            	<div id="searchButton"/>
+        			<img src="img/search.png"/>
+            	</div>
+            	<input type="text" readonly="readonly" name="searchText" id="searchText" placeholder="搜索产品" />
+            </div>
+            <!--搜索框结束-->
+			<!--轮播图开始-->
+			<div class="lunbo swiper-container" >
+				<div class="swiper-wrapper" id="swiper-wrapper">
+					
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!--轮播图结束-->
+			<!--分类列表开始-->
+			<div class="CategorylistALL">
+				<h6 class="CategorylistALL-title">产品分类<p class="last">查看全部产品<a class="iconfont">&#xe62f;</a></p></h6>
+			</div>
+			<div class="Categorylist">
+				<ul>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_Skin.png"/></span>
+						</dt>
+						<dd>护肤</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_Colour makeup.png"/></span>
+						</dt>
+						<dd>彩妆</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_perfume.png"/></span>
+						</dt>
+						<dd>香氛</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_hair salon.png"/></span>
+						</dt>
+						<dd>美发</dd>
+					</dl>
+				</ul>
+				<ul>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_body.png"/></span>
+						</dt>
+						<dd>美体/美甲</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_nursing.png"/></span>
+						</dt>
+						<dd>个体护理</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_men.png"/></span>
+						</dt>
+						<dd>男士</dd>
+					</dl>
+					<dl>
+						<dt>
+							<span><img src="image/index/product_vother.png"/></span>
+						</dt>
+						<dd>其他</dd>
+					</dl>
+				</ul>
+			</div>
+			<!--分类列表结束-->
+			<!--爆款列表开始-->
+				<div class="burstlist">
+					<h6 class="burstlist-title">
+						<p class="first">
+							<span>每早8.00,</span>
+							<span>俏说为你长草拔草</span>
+						</p>
+						<p class="last" qishu="-1">查看往期列表<a class="iconfont">&#xe62f;</a></p></h6>
+					<div id="burstlist">
+						
+					</div>
+					
+				</div>
+			</ul>
+		</div>
+			<!--爆款列表结束-->
+	</section>	
+			<!--footer开始-->
+			
+		<footer >
+			<div class="footermask">
+				
+			</div>
+			<div class="Comment-List">
+				<div class="comment">
+					<img src="image/button_review.png"/>
+				</div>
+				<div class="list">
+					<img src="image/button_list.png"/>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<dl>
+						<dt class="iconfont" style="color: #FE547B;">
+							&#xe626;
+						</dt>
+						<dd>首页</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe625;
+						</dt>
+						<dd>试用</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<div class="ComentList button1">
+						<img src="image/tab_middlebutton_1.png"/>
+					</div>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe620;
+						</dt>
+						<dd>购物车</dd>
+					</dl>
+					<span class="num">0</span>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe622;
+						</dt>
+						<dd>个人中心</dd>
+					</dl>
+				</li>
+			</ul>
+		</footer>
+	</body>
+	
+	<script type="text/javascript">
+		
+		
+		
+	</script>
+</html>

@@ -1,0 +1,202 @@
+section.mui-content{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0.94rem;
+}
+.mui-table-view{
+	background: #efeff4;
+}
+.mui-table-view:after{
+	background: none;
+}
+.bigimg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99999;
+	display: none;
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+.bigimg img{
+	display: block;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	
+}
+.footer{
+	width: 100%;
+	background: #000;
+	height: 0.94rem;
+	line-height: 0.94rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.36rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.box{
+	background: #fff;
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.2rem;
+}
+.box .boxTop{
+	font-size: 12px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.24rem;
+}
+.box .boxTop .boxTopLeft{
+	color: #000;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	margin-bottom: 0.2rem;
+}
+.box .boxTop .boxTopRight{
+	width: 100%;
+	color: #999999;
+	text-indent: 0.48rem;
+}
+.ellipsis{
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.box .boxCenter{
+	display: none;
+	width: 100%;
+	font-size: 12px;
+	line-height: 0.36rem;
+}
+.box .boxCenter .one{
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.24rem;
+	overflow: hidden;
+}
+.box .boxCenter .one .imgdiv{
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.box .boxCenter .one .imgdiv:nth-child(3){
+	margin-right: 0;
+}
+.box .boxCenter .one .imgdiv:nth-child(6){
+	margin-right: 0;
+}
+.box .boxCenter .one img{
+	display: block;
+}
+.box .boxCenter .two .imgdiv{
+	width: 30%;
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 0.2rem;
+	overflow: hidden;
+}
+.box .boxCenter .two .imgdiv:nth-child(3){
+	margin-right: 0;
+}
+.box .boxCenter .two .imgdiv:nth-child(6){
+	margin-right: 0;
+}
+.box .boxCenter .two img{
+	display: block;
+}
+.box .boxCenter .two{
+	width: 100%;
+	height: auto;
+	color: #000000;
+	
+}
+
+.box .boxCenter .twomy{
+	width: 100%;
+	height: auto;
+	padding: 0.2rem 0;
+	overflow: hidden;
+	border-top: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.24rem;
+}
+.box .boxCenter .twomy p{
+	color: #fe547b;
+	font-size: 12px;
+	line-height: 0.4rem;
+	margin: 0;
+}
+.box .boxCenter .twomy p span{
+	color: #999999;
+}
+.box .boxCenter .twoserver{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-top: 1px solid #e8e8e8;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0.2rem 0.24rem;
+}
+.box .boxCenter .twoserver p{
+	color: darkgreen;
+	font-size: 12px;
+	line-height: 0.4rem;
+}
+.box .boxCenter .twoserver p span{
+	color: #999999;
+}
+.box .boxBottom{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.24rem;
+	border-top: 1px solid #e8e8e8;
+	height: 0.6rem;
+	position: relative;
+}
+.box .boxBottom span{
+	float: right;
+	display: block;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	padding-left: 0.5rem;
+	font-size: 12px;
+}
+.box .boxBottom .weidu{
+	color: #fe547b;
+}
+.box .boxBottom .yidu{
+	color: #666;
+}
+.box .boxBottom .reply{
+	color: #fe547b;
+}
+.box .boxBottom .shouqi{
+	opacity: 0;
+	width: 1rem;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -0.5rem;
+	text-align: center;
+	padding: 0;
+	display: block;
+	transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}

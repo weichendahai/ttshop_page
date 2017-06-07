@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>试用</title>
+		<link rel="stylesheet" type="text/css" href="common/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/tryout.css"/>
+		<script type="text/javascript" src="common/rem.js"></script>
+		<script type="text/javascript" src="common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="common/androidToast.js"></script>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<span class="iconfont goback">&#xe648;</span>试用列表
+		</header>
+		<!--header结束-->
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							全部
+						</a>
+						<a class="mui-control-item " href="#item2mobile">
+							我的
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll wrapper">
+								<ul class="mui-table-view">
+									<!--<li>
+										<img class="banner" src="img/banner-lunbo.png"/>
+										<div class="jieshao">
+											<div class="left">
+												<h6>资生堂百优精纯乳霜50ml</h6>
+												<p>数量：<span>5000</psan></p>
+												<p>参与人数：<span>5000</psan></p>
+											</div>
+											<div class="right">
+												<div class="btn ljcy">立即参与</div>
+												<p>距离结束：<span>6天1小时</psan></p>
+											</div>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll wrapper">
+								<ul class="mui-table-view">
+									<!--<li>
+										<img class="banner" src="img/banner-lunbo.png"/>
+										<div class="jieshao">
+											<div class="left">
+												<h6>资生堂百优精纯乳霜50ml</h6>
+												<p>数量：<span>5000</psan></p>
+												<p>参与人数：<span>5000</psan></p>
+											</div>
+											<div class="right">
+												<div class="btn ljcy">立即参与</div>
+												<p>距离结束：<span>6天1小时</psan></p>
+											</div>
+										</div>
+									</li>-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--试用导航开始-->
+		<!--<ul class="kinerNav">
+			<li class="active">
+				全部
+			</li>
+			<li>
+				我的
+			</li>
+		</ul>-->
+		<!--试用导航结束-->
+		<!--试用开始-->
+		<!--<section>
+				<div class="kinerContent">
+            		<div class="wrapper">
+						<ul class="tryoutAll kinerItem" >
+							<li>
+								<img class="banner" src="img/banner-lunbo.png"/>
+								<div class="jieshao">
+									<div class="left">
+										<h6>资生堂百优精纯乳霜50ml</h6>
+										<p>数量：<span>5000</psan></p>
+										<p>参与人数：<span>5000</psan></p>
+									</div>
+									<div class="right">
+										<div class="btn ljcy">立即参与</div>
+										<p>距离结束：<span>6天1小时</psan></p>
+									</div>
+								</div>
+							</li>
+							<fieldset>
+								<legend>已结束</legend>
+							</fieldset>
+							<li>
+								<img class="banner" src="img/banner-lunbo.png"/>
+								<div class="jieshao">
+									<div class="left">
+										<h6>资生堂百优精纯乳霜50ml</h6>
+										<p>数量：<span>5000</psan></p>
+										<p>参与人数：<span>5000</psan></p>
+									</div>
+									<div class="right">
+										<div class="btn yjs">已结束</div>
+										<p>距离结束：<span>6天1小时</psan></p>
+									</div>
+								</div>
+							</li>
+						
+						</ul>
+						<ul class="tryoutMy kinerItem" >
+							<li>
+								<img class="banner" src="img/banner-lunbo.png"/>
+								<div class="jieshao">
+									<div class="left">
+										<h6>资生堂百优精纯乳霜50ml</h6>
+										<p>数量：<span>5000</psan></p>
+										<p>参与人数：<span>5000</psan></p>
+									</div>
+									<div class="right">
+										<div class="btn sqz">申请中</div>
+										<p>距离结束：<span>6天1小时</psan></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<img class="banner" src="img/banner-lunbo.png"/>
+								<div class="jieshao">
+									<div class="left">
+										<h6>资生堂百优精纯乳霜50ml</h6>
+										<p>数量：<span>5000</psan></p>
+										<p>参与人数：<span>5000</psan></p>
+									</div>
+									<div class="right">
+										<div class="btn sqz">申请中</div>
+										<p>距离结束：<span>6天1小时</psan></p>
+									</div>
+								</div>
+							</li>
+							<fieldset>
+								<legend>已结束</legend>
+							</fieldset>
+							<li>
+								<img class="banner" src="img/banner-lunbo.png"/>
+								<div class="jieshao">
+									<div class="left">
+										<h6>资生堂百优精纯乳霜50ml</h6>
+										<p>数量：<span>5000</psan></p>
+										<p>参与人数：<span>5000</psan></p>
+									</div>
+									<div class="right">
+										<div class="btn wjq">未中签</div>
+										<p>距离结束：<span>6天1小时</psan></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<!--试用结束
+		</section>-->
+		<!--footer开始-->
+		<footer >
+			<div class="footermask">
+				
+			</div>
+			<div class="Comment-List">
+				<div class="comment">
+					<img src="image/button_review.png"/>
+				</div>
+				<div class="list">
+					<img src="image/button_list.png"/>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<dl>
+						<dt class="iconfont" style="color: #FE547B;">
+							&#xe626;
+						</dt>
+						<dd>首页</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe625;
+						</dt>
+						<dd>试用</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<div class="ComentList button1">
+						<img src="image/tab_middlebutton_1.png"/>
+					</div>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe620;
+						</dt>
+						<dd>购物车</dd>
+					</dl>
+					<span class="num">0</span>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe622;
+						</dt>
+						<dd>个人中心</dd>
+					</dl>
+				</li>
+			</ul>
+		</footer>
+</body>
+	<script type="text/javascript" src="common/common.js"></script>
+	<script type="text/javascript" src="js/tryout.js"></script>
+	<script type="text/javascript" src="common/mui.min.js"></script>
+	<script type="text/javascript" src="common/mui.pullToRefresh.js"></script>
+	<script type="text/javascript" src="common/mui.pullToRefresh.material.js"></script>
+</html>

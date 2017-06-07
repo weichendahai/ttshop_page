@@ -1,0 +1,138 @@
+html,body{
+	background: #f2f2f2;
+	overflow: hidden;
+}
+.head{
+	width: 100%;
+	height: 1.1rem;
+	background: #fff;
+}
+.head .goback{
+	display: block;
+	float: left;
+	width: 0.8rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+.head .tiwen{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	float: right;
+	margin: 0.35rem 0.6rem 0 0;
+	border: 1px solid #000;
+	color: #000;
+	line-height: 0.4rem;
+	text-align: center;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 0.28rem;
+}
+.head h2{
+	float: left;
+	
+	line-height: 1.1rem;
+}
+.top{
+	width: 100%;
+	background: #fff;
+	padding-top:0.4rem ;
+	border-bottom: 1px solid #eeeeee;
+	box-sizing:content-box;
+	-webkit-box-sizing: content-box;
+}
+.top .touxiang{
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	width: 1.74rem;
+	height: 1.74rem;
+	position: relative;
+	overflow: hidden;
+}
+.top .touxiang .sex{
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	position: absolute;
+	right: 0.12rem;
+	bottom: 0.16rem;
+	font-size: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	background: #fff;
+	color: #01c5c4;
+	border-radius: 50%;
+}
+.top .touxiang img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.top p{
+	width: 100%;
+	text-align: center;
+	height: 0.96rem;
+	line-height: 0.96rem;
+	color: #666666;
+}
+.top p span{
+	font-weight: bold;
+	color: #ff6588;
+	font-size: 0.28rem;
+	margin: 0 0.05rem;
+}
+.top .btn{
+	width: 2.7rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	line-height: 0.8rem;
+	text-align: center;
+	background:#000 ;
+	color: #fff;
+	margin: 0.1rem auto 0.4rem;
+	
+}
+.heng{
+	width: 100%;
+	height: 0.6rem;
+	background: #f2f2f2;
+	line-height: 0.6rem;
+	text-align: center;
+	color: #999999;
+}
+.yongjintitle{
+	color: #000;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-indent: 0.24rem;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+.yongjin{
+	background:#fff;
+	top: 5.2rem;
+}
+.yongjin li{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.24rem ;
+	height: 1.2rem;
+	border-bottom: 1px solid #eee;
+}
+.yongjin li p{
+	height: 1.2rem;
+	line-height: 1.2rem;
+	float: right;
+}
+.yongjin li p:nth-child(1){
+	float:left;
+}
+.yongjin li p:nth-child(2){
+	color: #e62c6d;
+	margin-left: 0.6rem;
+}

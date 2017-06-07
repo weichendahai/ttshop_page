@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>点评</title>
+		<link rel="stylesheet" type="text/css" href="common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/comment.css"/>
+		<script type="text/javascript" src="common/rem.js"></script>
+		<script type="text/javascript" src="common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="common/common.js"></script>
+		<script type="text/javascript" src="common/androidToast.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<span class="iconfont goback">&#xe648;</span>写点评
+		</header>
+		<div class="bigimg">
+			<div class="mask">
+				
+			</div>
+			<img src=""/>
+		</div>
+		<!--header结束-->
+		<div class="product" id="commentproduct"></div>
+		<div class="remind iconfont">分享给朋友 朋友享折扣<p class="change changeproduct" id="changeproduct"><span class="iconfont quan">&#xe61e;</span>选择商品</p></div>
+		<section>
+			
+			<div class="change changeproduct changecomment" id="changeproduct">
+				<span class="iconfont">&#xe639;</span>选择商品
+			</div>
+			
+			<div class="fenshu iconfont"  id="fenshu">	
+				<span class="star"></span>
+				<span class="star"></span>
+				<span class="star"></span>
+				<span class="star"></span>
+				<span class="star"></span>
+				<p><a class="scroe">0</a>分</p>
+			</div>
+			<div class="wenzi">
+				<p><span>优点：</span>小主说说使用后的效果感受哦~</p>
+				<div class="txt">
+					<input type="text" maxlength="15" name="" id="youdian" value="" />
+					<div class="num"><a>0</a>/15</div>
+				</div>
+			</div>
+			<div class="wenzi">
+				<p><span>缺点：</span>这个是擦拭型的吧？会不会擦不干净呢？</p>
+				<div class="txt">
+					<input type="text" maxlength="15" name="" id="quedian" value="" />
+					<div class="num"><a>0</a>/15</div>
+				</div>
+			</div>
+			<div class="carema">
+				<div class="pictureshow">
+					<div class="imgarrshow">
+						
+					</div>
+				</div>
+				<dl class="picture iconfont">
+					&#xe627;
+					<input type="file" id="imgTest" type="file" accept="image/*">
+				</dl>
+				<img class="xin" style="display: none;width: 40px; margin: 0 auto;" src="img/5-121204194026-50.gif"/>
+				
+				
+			</div>
+			
+			
+			<div class="Recommend">
+				<div class="change">
+					<span class="iconfont">&#xe639;</span>类比推荐
+				</div>
+				
+			</div>
+			<div class="submit">
+				写点评赚佣金
+			</div>
+		</section>
+		<!--footer开始-->
+		<footer >
+			<div class="footermask">
+				
+			</div>
+			<div class="Comment-List">
+				<div class="comment">
+					<img src="image/button_review.png"/>
+				</div>
+				<div class="list">
+					<img src="image/button_list.png"/>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<dl>
+						<dt class="iconfont" style="color: #FE547B;">
+							&#xe626;
+						</dt>
+						<dd>首页</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe625;
+						</dt>
+						<dd>试用</dd>
+					</dl>
+				</li>
+				
+				<li>
+					<div class="ComentList button1">
+						<img src="image/tab_middlebutton_1.png"/>
+					</div>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe620;
+						</dt>
+						<dd>购物车</dd>
+					</dl>
+					<span class="num">0</span>
+				</li>
+				
+				<li>
+					<dl>
+						<dt class="iconfont">
+							&#xe622;
+						</dt>
+						<dd>个人中心</dd>
+					</dl>
+				</li>
+			</ul>
+		</footer>
+</body>
+	<script type="text/javascript" src="js/comment.js?time=New Date()"></script>
+</html>

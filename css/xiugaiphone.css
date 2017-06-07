@@ -1,0 +1,79 @@
+.head{
+	width: 100%;
+	height: 1.1rem;
+	background: #fff;
+}
+.head .goback{
+	display: block;
+	float: left;
+	width: 0.8rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-align: center;
+	font-size: 0.5rem;
+	font-weight: bold;
+}
+
+.head h2{
+	float: left;
+	
+	line-height: 1.1rem;
+}
+.xiugai{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.6rem;
+}
+.yanzheng{
+	width: 100%;
+	overflow: hidden;
+}
+#txt{
+	display: block;
+	height: 0.7rem;
+	width: 4rem;
+	background: #f2f2f2;
+	border-radius: 0.7rem;
+	text-indent: 0.24rem;
+	border: 1px solid #f2f2f2;
+	float:left;
+}
+.btn{
+	display: block;
+	float: right;
+	height: 0.7rem;
+	width: 1.6rem;
+	text-align: center;
+	line-height: 0.7rem;
+	border-radius: 0.35rem;
+	border: 1px solid #ff6588;
+	color: #ff6588;
+}
+#btn{
+	display: block;
+	width: 1.6rem;
+	height: 0.7rem;
+	text-align: center;
+	line-height: 0.7rem;
+	margin: 0.4rem auto;
+	color: #fff;
+	background: #ff6588;
+	border-radius: 0.35rem;
+}
+#yanzhengma{
+	margin-top: 0.4rem;
+	margin-bottom: 0.2rem;
+	display: block;
+	height: 0.7rem;
+	width: 100%;
+	background: #f2f2f2;
+	border-radius: 0.7rem;
+	text-indent: 0.24rem;
+	border: 1px solid #f2f2f2;
+}
+.xiugai p{
+	width: 100%;
+	color: #ff6588;
+	
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>意见反馈</title>
+		<link rel="stylesheet" type="text/css" href="../common/common.css"/>
+		<script type="text/javascript" src="../common/rem.js"></script>
+		<script type="text/javascript" src="../common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../common/common.js"></script>
+		<script type="text/javascript" src="../common/androidToast.js"></script>
+		<style type="text/css">
+			.footer{
+				width: 100%;
+				background: #000;
+				height: 0.94rem;
+				line-height: 0.94rem;
+				text-align: center;
+				color: #fff;
+				font-size: 0.36rem;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			.say{
+				width: 100%;
+				height: auto;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				padding: 0.2rem 0.24rem 0.4rem 0.24rem;
+				margin-bottom: 0.2rem;
+				background: #fff;
+				position: relative;
+			}
+			.sayleft{
+				width: 100%;
+				height: 0.6rem;
+			}
+			.sayright{
+				
+				width: 100%;
+				line-height: 0.36rem;
+				min-height: 2rem;
+				outline: none;
+				resize:none;
+				border: none;
+				
+			}
+			section{
+				background: #f2f2f2;
+			}
+			.takephoto{
+				width: 100%;
+				height: 3rem;
+				background:#FFFFFF;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				padding: 0 0.24rem ;
+			}
+			.takephoto .title{
+				width: 100%;
+				height: 0.8rem;
+				line-height: 0.8rem;
+			}
+			.takephoto .title span{
+				color: #c5c5c5;
+				
+			}
+			.takephoto .takephotob{
+				width: 100%;
+				height: auto;
+				display: flex;
+				display: -webkit-flex;
+			}
+			.takephoto .takephotob .takephotobl{
+				width: 1.2rem;
+				height: 1.2rem;
+				margin: 0.2rem 0.2rem 0 0;
+				text-align: center;
+				line-height: 1.24rem;
+				font-size: 0.5rem;
+				color: #e2e2e2;
+				position: relative;
+			}
+			.takephoto .takephotob .takephotobl img{
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			#imgTest{
+				opacity: 0;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 999;
+			}
+			.num{
+				position: absolute;
+				right: 0.6rem;
+				bottom: 0.2rem;
+				color: #b6b6b6;
+			}
+			.num a{
+				color: #b6b6b6;
+			}
+			.pictureshow{
+				margin-top: 0.2rem;
+				flex: 1;
+				-webkit-flex: 1;
+				height: auto;
+			}
+			.pictureshow img{
+				display: block;
+				width: 70%;
+				margin: 0 auto;
+			}
+			.imgarrshow{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			.imgarrshow .showImagediv{
+				width: 30%;
+				margin-right: 0.1rem;
+				float: left;
+				margin-top: 0.2rem;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				border: 1px solid #e8e8e8;
+				position: relative;
+			}
+			.imgarrshow .showImagediv .showImagedivoverflow{
+				overflow: hidden;
+				width: 100%;
+				height: 100%;
+			}
+			.imgarrshow .showImagediv .delete{
+				width: 0.4rem;
+				height: 0.4rem;
+				font-size: 0.4rem;
+				position: absolute;
+				right: -0.2rem;
+				top: -0.2rem;
+				color: #fe547b;
+				text-align: center;
+				line-height: 0.4rem;
+			}
+			img{
+				display: block;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<span class="iconfont goback">&#xe648;</span>意见反馈
+		</header>
+		<section>
+			<div class="say">
+				<div class="sayleft">
+					反馈问题：
+				</div>
+				<textarea name="" class="sayright" maxlength="200" rows="" cols="" placeholder="提出问题"></textarea>
+				<div class="num">
+					<a>0</a>/200	
+				</div>
+			</div>
+			<div class="takephoto">
+				<p class="title">反馈图片<span>（提交问题截图）</span></p>
+				<div class="takephotob">
+					<div class="takephotobl iconfont">
+						<img src="../image/feedback/upload.png"/>
+						<input type="file" id="imgTest" type="file" accept="image/*">
+					</div>
+					<div class="pictureshow">
+						<img class="xin" style="display: none;width: 40px; margin: 0 auto;" src="../img/5-121204194026-50.gif"/>
+					</div>
+				</div>
+				<div class="imgarrshow"></div>
+			</div>
+		</section>
+		<div class="footer">
+			提交
+		</div>
+	</body>
+	<script type="text/javascript">
+		var fid = Request.QueryString("fid");
+		var user_id = localStorage.getItem("user_id");
+		//input监听
+		$(".sayright").bind('input propertychange',function(){//input的内容发生变化时
+			var len = $(this).val().length;
+			$(this).parent(".say").find(".num").find("a").text(len);
+			if(len >= 200){
+				$(this).parent(".say").find(".num").find("a").css("color","#fe547b")
+			}else{
+				$(this).parent(".say").find(".num").find("a").css("color","#b6b6b6")
+			}
+		});
+		$(".footer").click(function(){
+			var img_addr = '';
+			//上传的图片用；分割好传给后台
+			for(var i = 0;i<$(".imgarrshow .showImagediv").length;i++){
+				if(i==$(".imgarrshow .showImagediv").length-1){
+					img_addr += $(".imgarrshow img").eq(i).attr("src");
+				}else{
+					img_addr += $(".imgarrshow img").eq(i).attr("src")+";";
+				}
+			}
+			var content = encodeURI($(".sayright").val());
+			if($(".sayright").val()==''){
+				new Toast({context:$('body'),message:"请写反馈内容"}).show(); 
+			}else{
+				$.ajax({
+					type: ajaxtype,
+					url: submitfeedback,
+					dataType: "jsonp",
+					data:{
+						user_id:user_id,
+						fid:fid,
+						content:content,
+						img_addr:img_addr
+					},
+					contentType: "application/json",
+					jsonp: "jsonpCallback",
+					jsonpCallback:"submitfeedback",
+					success: function(data){
+						console.log(data)
+						if(data.result == 0){
+							window.location.href = "feedsuccess.html"
+						}else{
+							new Toast({context:$('body'),message:data.content}).show(); 
+						}
+					},
+					error: function(){
+						new Toast({context:$('body'),message:'网络故障'}).show(); 
+					}
+				})
+			}
+		})
+		var clicknum = 0;
+	//上传图片最多6张
+	$("#imgTest").change(function(e){
+		if($(".imgarrshow .showImagediv").length>=6){
+			new Toast({context:$('body'),message:'您最多选择6张图片'}).show(); 
+		}else{
+			var size = e.target.files[0].size
+			if(size<=10485760){
+				console.info(e.target.files[0]);//图片文件
+			   	var type = e.target.files[0].type;//格式
+			   	type = type.split("/")[1];
+			    var dom =$("input[id^='imgTest']")[0];
+			    
+			    var reader = new FileReader();
+			    reader.onload = (function (file) {
+			        return function (e) {
+			            var bate64 = this.result//这个就是base64的数据了
+					    var img = new Image();//构造JS的Image对象
+		    		    img.src = this.result;//将本地图片赋给image对象
+			            bate64 =bate64.split(",")[1];
+			            //$("#showImage")[0].src=this.result;
+			        	$.ajax({
+							type: 'POST',
+							url: UploadServlet,
+							dataType: "json",
+							data:{"imgStr":bate64,"postfix":type},
+							beforeSend:function(){
+								$(".xin").css("display","block");
+							},
+							success: function(data){
+								console.log(data.content);
+								if(data.result == 0){
+									
+									setTimeout(function(){
+										var str = '<div class="showImagediv"><div class="showImagedivoverflow"><img src="'+data.content+'"/></div><span class="delete iconfont">&#xe649;</span></div>'
+										$(".imgarrshow").append(str);
+										var imgdivwidth = $(".showImagediv").width();
+										var imgdivheight = imgdivwidth;
+										console.log(img.height+";"+img.width)
+										if(img.height<img.width){
+											$(".showImagediv").eq(clicknum).find("img").css("height","100%");
+										}else{
+											$(".showImagediv").eq(clicknum).find("img").css("width","100%");
+										}
+										$(".showImagediv").css("height",imgdivheight);
+										$(".xin").css("display","none");
+										new Toast({context:$('body'),message:'上传完成'}).show(); 
+										clicknum++;
+									},500)
+								}else{
+									new Toast({context:$('body'),message:data.content}).show(); 
+								}
+							},
+							error: function(){
+								new Toast({context:$('body'),message:'上传失败'}).show(); 
+							}
+						});	
+			        };
+			    })(e.target.files[0]);
+			    reader.readAsDataURL(e.target.files[0]);
+			}else{
+				new Toast({context:$('body'),message:'图片超过10兆不可上传'}).show(); 
+			}
+		}
+	});
+	//显示大图
+	$(".imgarrshow ").delegate("img","click",function(){
+		var src = $(this).attr("src");
+		$(".bigimg img").attr("src",src);
+		$(".bigimg").css("display","block");
+		var _height = $(".bigimg img").height();
+		$(".bigimg img").css("margin-top",-_height/2);
+	});
+	//取消显示大图
+	$(".bigimg").click(function(){
+		$(this).css("display","none");
+	});
+	//删除图片
+	$(".imgarrshow ").delegate(".delete","click",function(){
+		alert(1)
+		$(this).parent(".showImagediv").remove();
+		clicknum--;
+	});
+	</script>
+</html>

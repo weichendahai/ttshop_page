@@ -1,0 +1,81 @@
+section{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	overflow: scroll;
+	border-top: 1px solid #e8e8e8;
+}
+body{
+	overflow: hidden;
+}
+header .right{
+	position: absolute;
+	top: 0;
+	right: 0.6rem;
+	font-size: 0.28rem;
+	font-weight: 900;
+	color: #fff
+}
+.dizhi{
+		width: 100%;
+	height: auto;
+	background: #fff;
+	color: #666666;
+	margin-bottom: 0.2rem; 
+	position: relative;
+	overflow: hidden;
+	border-bottom: 1px solid #EEEEEE;
+}
+.moren{
+	float: left;
+	padding:0.02rem 0.1rem;
+	color: #fff;
+	background: #000;
+	border-radius: 4px;
+}
+
+.dizhi .lianxiren{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 0.24rem;
+	padding: 0.24rem 0.2rem;
+	overflow: hidden;
+}
+.dizhi .lianxiren .left{
+	display: block;
+	width: 0.6rem;
+	float: left;
+	font-size: 0.38rem;
+}
+.dizhi .lianxiren p{
+	float: left;
+	font-weight: bold;
+	margin-right: 0.66rem;
+}
+.dizhi .lianxiren .phone{
+	float: left;
+	font-weight: bold;
+	margin-right: 0.2rem;
+}
+.dizhi .dizhixiangqing{
+	width: 100%;
+	min-height: 0.8rem;
+	color: #858585;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	line-height: 0.36rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 0.24rem;
+}
+.dizhi .dizhixiangqing span{
+	font-size: 0.36rem;
+	float: left;
+	width: 0.4rem;
+	height: 0.8rem;
+	line-height: 0.46rem;
+	
+}

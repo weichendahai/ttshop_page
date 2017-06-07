@@ -1,0 +1,487 @@
+.swiper-wrapper{
+	height: 6.34rem;
+	
+}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 100%;
+	top: 0;
+	z-index: 1000;
+	background: #000;
+	opacity: 0.3;
+}
+.changexinghao{
+	width: 70%;
+	height:auto;
+	background: #fff;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -35%;
+	z-index: 1001;
+	display: none;
+	border-radius: 20px;
+}
+.changexinghao .top{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	position: relative;
+	height: auto;
+	padding: 0.4rem 0.24rem 0;
+	display: flex;
+	display: -webkit-flex;
+}
+.changexinghao .top span{
+	display: block;
+	position: absolute;
+	width: 0.2rem;
+	height: 0.2rem;
+	font-size: 0.3rem;
+	right: 0.3rem;
+	top: 0.2rem;
+	text-align: center;
+	line-height: 0.2rem;
+}
+.changexinghao .top .topimg{
+	width:1rem;
+	height: 1rem;
+	border: 1px solid #e8e8e8;
+	border-radius: 12px;
+	overflow: hidden;
+	margin-right: 0.3rem;
+}
+.changexinghao .top .topright{
+	flex: 1;
+	-webkit-flex: 1;
+	height: 1rem;
+	margin-right: 0.5rem;
+}
+.changexinghao .top .topright .title{
+	height: 0.6rem;
+	line-height: 0.3rem;
+	color: #666666;
+}
+.changexinghao .top .topright .money{
+	color: #ee749d;
+	height: 0.4rem;
+	line-height: 0.4rem;
+}
+.changexinghao .top .topimg img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.changexinghao .center{
+	width: 100%; 
+}
+.changexinghao .check{
+	background:#fff;
+    color: #fe547b;
+    border-color: #fe547b;
+   
+}
+.xinghao1{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding-left: 0.24rem ;
+	overflow: hidden;
+}
+.xinghao1 .title{
+	height:0.8rem;
+	line-height: 0.8rem;
+	color: #666666;
+}
+.xinghao1 span{
+	display: block;
+	float: left;
+	height: 0.52rem;
+	line-height: 0.52rem;
+	padding: 0 0.2rem;
+	border: 1px solid #b9b9b9;
+	border-radius: 0.26rem;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.changexinghao .bottom{
+	height:1.1rem;
+	width: 100%;
+	padding: 0.2rem 0;
+}
+
+.changexinghao .bottom span{
+	display: block;
+	margin: 0 auto;
+	background: #fe547b;
+	color: #fff;
+	background: #111111;
+	line-height: 0.7rem;
+	text-align: center;
+	font-size: 0.28rem;
+	text-align: center;
+	width: 2.4rem;
+	border-radius: 0.35rem;
+}
+section.mui-scroll-wrapper{
+	position: absolute;
+	background: #f5f5f5;
+	bottom: 1.05rem;
+	left: 0;
+	top: 0;
+}
+.swiper-slide{
+	background: #FFF;
+}
+.swiper-pagination-bullet-active{
+	background: #e42d6b;	
+}
+.mui-table-view{
+	background: #efefef;
+}
+/*搜索框*/
+.search{
+	width: 6.3rem;
+	height: 0.6rem;
+	position: absolute;
+	top: 0.24rem;
+	left: 0.6rem;
+	background: #fff;
+	z-index: 999;
+	border-radius: 0.3rem;
+	overflow: hidden;
+	border: 1px solid #EEEEEE;
+	filter:alpha(opacity=80);   
+    -moz-opacity:0.8;   
+    -khtml-opacity: 0.8;   
+    opacity: 0.8;   
+}
+.search #searchButton{
+	width: 0.8rem;
+	height: 0.6rem;
+	float: left;
+	background: #fff;
+	
+}
+.search #searchButton img{
+	display: block;
+	width: 0.24rem;
+	height: 0.26rem;
+	float: right;
+	margin-right: 0.22rem;
+	margin-top: 0.16rem;
+}
+.search #searchText{
+	height: 0.6rem;
+	width: 5rem;
+	float: left;
+	background: #fff;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.24rem;
+	
+}
+/*轮播图*/
+.lunbo{
+	width: 100%;
+	height: auto;
+	
+}
+.swiper-slide img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*分类列表*/
+.Categorylist{
+	width: 100%;
+	height: auto;
+	background: #f5fcf5;
+	margin-bottom: 0.2rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.3rem;
+}
+.Categorylist ul{
+	width: 100%;
+	margin-bottom: 0.3rem;
+	overflow: hidden;
+}
+.Categorylist ul:last-child{
+	margin: 0;
+}
+/*.Categorylist ul:nth-child(2){
+	margin-top: 0.4rem;
+}*/
+.Categorylist ul dl{
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.Categorylist ul dl dt{
+	width: 100%;
+	height: 1rem;
+	overflow: hidden;
+	margin-bottom: 0.2rem;
+}
+.Categorylist ul dl dt span{
+	display: block;
+	height: 1rem;
+	width: 1rem;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.Categorylist ul dl dt span img{
+	display: block;
+	width: 100%;
+}
+.Categorylist ul dl dd{
+	width: 100%;
+	font-size: 0.24rem;
+	text-align: center;
+	color: rgb(102,102,102);
+}
+.CategorylistALL{
+	margin-top: 0.2rem;
+	background: #f5fcf5;
+}
+.CategorylistALL-title{
+	border-top: 1px solid #e8e8e8;
+	width: 100%;
+	height: 0.72rem;
+	line-height: 0.72rem;
+	font-size: 0.24rem;
+	font-weight: bold;
+	box-sizing: border-box;
+	padding-left: 0.24rem;
+	color: #000;
+	margin: 0;
+}
+.CategorylistALL-title img{
+	display: block;
+	width: 0.26rem;
+	height: 0.3rem;
+	margin-top: 0.21rem;
+	float: left;
+	margin-right: 0.18rem;
+}
+.CategorylistALL-title .last{
+	float: right;
+	font-size: 0.24rem;
+	margin-right:0.24rem;
+	line-height: 0.72rem;
+	color: #000;
+	font-weight: 500;
+}
+.last a{
+	display: block;
+	float: right;
+	height: 0.72rem;
+	line-height: 0.76rem;
+}
+/*爆款列表*/
+.burstlist{
+	width: 100%;
+	height: auto;
+	background: #f5fcf5;
+}
+#burstlist{
+	width: 100%;
+	
+}
+.burstlist-title{
+	background: #f5fcf5;
+	width: 100%;
+	height: 1.12rem;
+	line-height: 1.12rem;
+	font-size: 0.24rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: #000;
+	margin: 0;
+	padding: 0.2rem 0.24rem 0.2rem 0.24rem;
+}
+.burstlist-title .first{
+	float: left;
+	color: #000;
+	font-weight: bold;
+	height: 0.72rem;
+}
+.burstlist-title .first span{
+	display: block;
+	height: 0.36rem;
+	line-height: 0.36rem;
+}
+.burstlist-title .last{
+	float: right;
+	line-height: 0.72rem;
+	font-size: 0.24rem;
+	color: #000;
+}
+.burstlist-div{
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.2rem ;
+	padding-bottom: 0.2rem;
+	background: #f5fcf5;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 0.24rem 0.3rem;
+}
+.burstlist-div .dianpingshare{
+	color: #FE547B;
+	height: 0.5rem;
+	margin-bottom: 0.3rem;
+}
+.burstlist-div .dianpingshare div{
+	float: left;
+	height: 0.5rem;
+	line-height: 0.48rem;
+	margin-right:0.3rem;
+	padding: 0 0.2rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 1px solid #e22f6c;
+	color: #e22f6c;
+	border-radius: 0.24rem;
+}
+.burstlist-div .dianpingshare div span{
+	margin-right: 0.1rem;
+}
+.burstlist-div .top{
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	height: 2.7rem;
+	padding-bottom: 0.4rem;
+}
+.burstlist-div .top .left{
+	width: 2.24rem;
+	height: 2.6rem;
+	margin-right: 0.24rem;
+	position: relative;
+}
+.burstlist-div .top .left span{
+	display: block;
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	top: 0.62rem;
+	left: 0.8rem;
+	border-radius: 50%;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+	opacity: 0.6;
+	background: #111111;
+}
+.burstlist-div .top .left img{
+	display: block;
+	height: 100%;
+}
+.burstlist-div .top .right{
+	flex: 1;
+	height: 2.6rem;
+	position: relative;
+}
+.burstlist-div .top .right .addShoppingcar{
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	margin-left:0.5rem;
+	font-size: 0.38rem;
+}
+.burstlist-div .top .right .title{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #000;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.burstlist-div .top .right .pingjia{
+	width: 100%;
+	height: 0.3rem;
+	display: flex;
+	display: -webkit-flex;
+	margin-bottom: 0.3rem;
+}
+.burstlist-div .top .right .pingjia img{
+	width: 0.3rem;
+	height: 0.3rem;
+	display: block;
+	float: left;
+	margin-right: 0.1rem;
+}
+.burstlist-div .top .right .pingjia p{
+	flex: 1;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	color: #999999;
+	font-size: 0.24rem;
+	font-weight: 500;
+	margin-left: 0.2rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.burstlist-div .top .right .shop{
+	width: 100%;
+	height: 0.4rem;
+}
+.burstlist-div .top .right .shop p{
+	font-weight: bold;
+	display: inline-block;
+	height: 0.4rem;
+	color: #000;
+	line-height: 0.4rem;
+}
+.burstlist-div .top .right .shop i{
+	font-style:normal;
+	font-size: 0.24rem;
+}
+.burstlist-div .bottom{
+	width: 100%;
+	height: auto;
+	line-height: 0.4rem;
+	color: #999999;
+	text-indent: 0.48rem;
+}
+.burstlist-div .bottom p{
+	-webkit-flex: 1;
+	padding: 0.28rem 0;
+	flex:1;
+	height: auto;
+	font-size:14px;
+	color: #666666;
+	line-height: 20px;
+}
+.burstlist-div .bottom span{
+	display: block;
+	width: 0.78rem;
+	height: auto;
+	position: relative;
+}
+.burstlist-div .bottom span .shang{
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 15%;
+}
+.burstlist-div .bottom span .xia{
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 15%;
+}
+.item_id{
+	display: none;
+}

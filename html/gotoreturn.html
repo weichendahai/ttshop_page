@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>申请退货</title>
+		<link rel="stylesheet" type="text/css" href="../common/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/gotureturn.css"/>
+		<script type="text/javascript" src="../common/rem.js"></script>
+		<script type="text/javascript" src="../common/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="../common/common.js"></script>
+		<script type="text/javascript" src="../common/mui.min.js"></script>
+		<script type="text/javascript" src="../common/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/gotoreturn.js"></script>
+		<script type="text/javascript" src="../common/androidToast.js"></script>
+	</head>
+	<body>
+		<!--header开始-->
+		<header>
+			<span class="iconfont goback">&#xe648;</span>申请退货
+		</header>
+		<section>
+			<div class="box" refund_type="-1">
+				<span class="left">申请服务：</span>
+				
+				<span class="right iconfont">&#xe62f;</span>
+				<p class="right">请选择申请服务</p>
+			</div>
+			<div class="box" refund_reason ="-1">
+				<span class="left">退货原因：</span>
+				
+				<span class="right iconfont">&#xe62f;</span>
+				<p class="right">请选择退货原因</p>
+			</div>
+			<div class="box">
+				<span class="left">退款金额：</span>
+				<p class="money"></p>
+			
+			</div>
+			<div class="boxs">
+				<div class="zuo">
+					<span class="top">详细原因：</span>
+					
+				</div>
+				<div class="you">
+					<textarea style="padding:0;font-size:12px;border: none;width: 100%;height:99%;outline: none;" name="shuoming" maxlength="2000" rows="" cols="" placeholder="最多2000字"></textarea>
+				</div>
+			</div>
+			<div class="imgbox">
+				<div class="img iconfont">
+					<img src="../image/feedback/upload.png"/>
+					<input type="file" id="imgTest" type="file" accept="image/*">
+				</div>
+				<img class="xin" src="../img/5-121204194026-50.gif"/>
+				<img id="showImage" >
+			</div>
+		</section>
+		<div class="footer">
+			提交申请
+		</div>
+		
+</body>
+</html>
