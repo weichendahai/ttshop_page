@@ -20,7 +20,7 @@ $(function(){
 					var express_code = data.content.express_code;//物流编号
 					console.log(express_code)
 					if(express_code ==''||express_code ==null||express_code==undefined){
-						
+
 						$(".wuliuzhuangtai").children("p").html("暂无物流信息");
 					}else{
 						$(".wuliuzhuangtai").attr("express_code",express_code);
@@ -29,7 +29,7 @@ $(function(){
 					if(content.order_state==0){
 						var order_state = "待付款"
 						$(".wuliuzhuangtai").css("display","none");
-						
+
 					}else if(content.order_state==1){
 						var order_state = "待发货";
 						$(".wuliuzhuangtai").children("p").text("暂无物流信息");
@@ -44,11 +44,11 @@ $(function(){
 					$(".lianxiren p").text("收货人："+decodeURI(content.contact));
 					$(".lianxiren .phone").text(content.mobile_phone);
 					$(".dizhis").text(decodeURI(content.address) );
-					
-					
+
+
 					var str ='';
 					for(var i =0;i<content.items.length;i++){
-						
+
 						var price = (content.items[i].item_price/100).toFixed(2);
 						str +='<div class="product" order_item_id ="'
 							+content.items[i].order_item_id+
@@ -74,19 +74,20 @@ $(function(){
 						}else{
 							str+='<div class="return">已申请退货</div></div>'
 						}
-						
+
 					}
-					var allprice = (content.order_total/100).toFixed(2);
+					 //后台计算好总价了；此处显示减运费显示
+					var allprice = ((content.order_total-content.freight)/100).toFixed(2);
 					var freight = (content.freight/100).toFixed(2);
 					str+='<div class="jiesuan"><p class="xiaoji "><span class="left">小计</span><span class="right">￥'
 							+allprice+
 						'</span></p><p class="yunfei "><span class="left">运费</span><span class="right">￥'
 							+freight+
 						'</span></p><p class="gongji "><span class="left">共计</span><span class="right">￥'
-							+((content.order_total+content.freight)/100).toFixed(2)+
+							+(content.order_total/100).toFixed(2)+
 						'</span></p></div><div order_code="'+content.order_id+'" class="pay paycancel">支付订单</div><div order_code="'+content.order_id+'" class="cancel paycancel">取消订单</div>'
 
-					
+
 					$(".order").append(str);
 					if(content.order_state==0){
 						$(".paycancel").css("display","block");
@@ -94,11 +95,11 @@ $(function(){
 
 					}
 				}else{
-					new Toast({context:$('body'),message:decodeURI(data.content)}).show(); 
+					new Toast({context:$('body'),message:decodeURI(data.content)}).show();
 				}
 			},
 			error: function(){
-				new Toast({context:$('body'),message:'网络故障'}).show(); 
+				new Toast({context:$('body'),message:'网络故障'}).show();
 			}
 		})
 	$(".order").delegate("#return","click",function(event){
@@ -110,9 +111,9 @@ $(function(){
 		window.location.href = "gotoreturn.html?item_id="+item_id+"&order_item_id="+order_item_id+"&order_id="+order_id+"&price="+price;
 		event.stopPropagation()
 	})
-	
+
 	//商品详情
-	
+
 	$(".order").delegate(".product","click",function(){
 		var item_id = $(this).attr("item_id");
 		window.location.href = "productdetails.html?item_id="+item_id;
@@ -141,13 +142,13 @@ $(function(){
 					}
 				},
 				error: function(){
-					alert(2)
+					// alert(2)
 					new Toast({context:$('body'),message:'网络错误'}).show();
 				}
 			});
 		}else{
-			
-		} 
+
+		}
 	})
 	$(".order").delegate(".pay","click",function(){
 		 var order_code = $(this).attr("order_code");
@@ -184,9 +185,9 @@ $(function(){
 			            success: function (res) {
 			                if(res.errMsg == "chooseWXPay:ok" ) {
 								window.location.href ="../order.html?orderIndex=0"
-			                   
+
 			                }else{
-			                   new Toast({context:$('body'),message:decodeURI("支付失败")}).show(); 
+			                   new Toast({context:$('body'),message:decodeURI("支付失败")}).show();
 			                }
 			            },
 			            cancel:function(res){
@@ -194,10 +195,10 @@ $(function(){
 			            }
 			        });
 				})
-				
+
 			},
 			error: function(){
-				
+
 			}
 		})
 	})
