@@ -15,7 +15,7 @@ $(function(){
 	if(share == -1){
 		getCodeForWechat()
 	}else{
-		
+
 	}
 	$("#goback").click(function(){
 		if(share == -1){
@@ -45,7 +45,8 @@ $(function(){
 				property_price_key.push(property_prices_keys);//规格价格
 				property_price_value.push(property_prices_values);//规格价格
 				var content = data.content;
-				var imgstr = content.item_icon;//图片地址
+				//var imgstr = content.item_icon;//图片地址
+				var imgstr = content.item_big_image_addr;//图片地址
 				var price = (content.price/100).toFixed(2);//保留两位小数 string
 				var item_price_discount = "￥"+(data.content.item_price_discount/100).toFixed(2);
 				var item_state = data.content.item_state;
@@ -63,7 +64,7 @@ $(function(){
 				//产品型号
 				var propertysstr = '';
 				for(var i = 0;i<content.propertys.length;i++){
-					
+
 					propertysstr+='<div class="xinghao1" property_key ="'
 						+content.propertys[i].property_key+
 						'"><p class="title">选择'
@@ -83,14 +84,14 @@ $(function(){
 								+decodeURI(content.propertys[i].values[j].property_desc)+
 								'</span>'
 						}
-						
-						
-					}	
+
+
+					}
 					propertysstr+='</div>'
-					
+
 				}
 				$(".xinghaobox").append(propertysstr)
-				
+
 				//评分
 				var score = (content.grade/10).toFixed(1);
 				$(".productcommentitle span").text(score+"分");
@@ -131,16 +132,16 @@ $(function(){
 						+((content.distributions[i].distribution_value[j].distribution_count/count)*100).toFixed(2)+
 						'%</i>'
 					}
-					distributionsstr+='</a></p>'	
+					distributionsstr+='</a></p>'
 				}
 				$(".procuctdistribution").append(distributionsstr);
 			}else{
-				new Toast({context:$('body'),message:decodeURI(data.content)}).show(); 
+				new Toast({context:$('body'),message:decodeURI(data.content)}).show();
 			}
-			
+
 		},
 		error: function(){
-			new Toast({context:$('body'),message:'网络故障'}).show(); 
+			new Toast({context:$('body'),message:'网络故障'}).show();
 		}
 	});
 	//商品评价
@@ -166,7 +167,7 @@ $(function(){
 					var str = '';
 					if(evaluates ==''){
 						var str = '<img src ="../img/kong.png" style="display:block;margin:0 auto;width:50%;"/><p style="text-align:center;height:1rem;line-height:1rem;">暂无点评记录</p>'
-						
+
 					}else{
 						for(var i =0;i<evaluates.length;i++){
 							var brithday = evaluates[i].user_date_of_birth;
@@ -184,7 +185,7 @@ $(function(){
 									+commentdata+
 									'</p></div><div class="details-center"><div class="fenshu iconfont"  id="fenshu">'
 							var starhalf = Math.round(evaluates[i].grade/10)%2;//半星
-							var staron = Math.floor(evaluates[i].grade/10/2);  
+							var staron = Math.floor(evaluates[i].grade/10/2);
 							var staroff = 5-staron-starhalf;
 						for	(var j=0;j<staron;j++){
 							str +='<img class="star" src="../image/score_1.png"/>'
@@ -196,9 +197,9 @@ $(function(){
 							for	(var j=0;j<staroff;j++){
 								str +='<img class="star" src="../image/score_2.png"/>'
 							}
-						}  
+						}
 						str +=	'</div><div class="youdian"><span>优点：</span>'
-								+decodeURI(evaluates[i].item_advantage)+	
+								+decodeURI(evaluates[i].item_advantage)+
 								'</div><div class="quedian"><span>缺点：</span>'
 								+decodeURI(evaluates[i].item_disadvatage)+
 								'</div></div><div class="pic-vid">'
@@ -209,7 +210,7 @@ $(function(){
 										str +='<div class="imgdiv"><img src="'+evaluate_image_addr[j]+'"/></div>';
 									}
 								}
-								
+
 							str+='</div><div class="share"><span class="iconfont">&#xe63a;</span> 分享闺蜜评价</div></div></div>'
 						}
 					}
@@ -230,7 +231,7 @@ $(function(){
 								var imgdivwidth = $(".imgdiv").eq(i).width();
 								var imgdivheight = imgdivwidth;
 								var imgwidth = $(".imgdiv").eq(i).children("img").width();
-								var imgheight = $(".imgdiv").eq(i).children("img").height();		
+								var imgheight = $(".imgdiv").eq(i).children("img").height();
 								if(imgheight<imgwidth){
 									$(".imgdiv").eq(i).children("img").css("height","100%");
 								}else{
@@ -240,7 +241,7 @@ $(function(){
 							}
 						})
 					}
-					
+
 				}else{
 					new Toast({context:$('body'),message:decodeURI(data.content)}).show();
 				}
@@ -275,7 +276,7 @@ $(function(){
 			getitemevaluate();
 			mui('#pullrefresh').pullRefresh().endPulldownToRefresh();//结束刷新
 		},1500)
-		
+
 	}
 	function pullupRefresh() {
 		page++;
@@ -367,7 +368,7 @@ $(function(){
 				}else{
 					$(".productdetails-productprice").text("￥"+xinghaoprice);
 				}
-				
+
 			}
 		}
 	})
@@ -399,7 +400,7 @@ $(function(){
 				add();
 			}
 		}
-		
+
 	})
 	//加入购物车
 	$(".footer li").eq(0).click(function(){
@@ -420,7 +421,7 @@ $(function(){
 				property_key +=$(".xinghao1").eq(i).attr("property_key")+"-";
 				property_value +=$(".xinghao1").eq(i).children(".check").attr("property_value")+"-";
 			}
-			
+
 		}
 		$.ajax({
 			type: ajaxtype,
@@ -432,7 +433,7 @@ $(function(){
 				evaluate_shared_id:evaluate_shared_id,
 				property_key:property_key,
 				property_value:property_value
-				
+
 			},
 			contentType: "application/json",
 			jsonp: "jsonpCallback",
