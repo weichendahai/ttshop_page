@@ -33,7 +33,7 @@ body{
 	text-align: center;
 	line-height: 0.8rem;
 	font-size: 0.24rem;
-	
+
 }
 .kinerNav > li.active{
 	color: #fe547b;
@@ -81,7 +81,7 @@ body{
 .kinerContent .kinerItem ul{
 	width: 100%;
 	height: auto;
-	
+
 }
 .kinerContent .kinerItem ul li{
 	width: 100%;
@@ -111,9 +111,10 @@ body{
 }
 .kinerContent .kinerItem ul li .productmain .productname{
 	height: 0.42rem;
-	font-size: 0.28rem;
+	font-size: 0.26rem;
 	font-weight: bold;
 	color: #000;
+	line-height: 0.4rem;
 }
 .kinerContent .kinerItem ul li .productmain .xinghao{
 	width: 100%;
@@ -131,7 +132,7 @@ body{
 	-webkit-transform: scale(0.8);
 	transform: scale(0.8);
 	margin-left: -10%;
-	
+
 }
 .kinerContent .kinerItem ul li .productmain .pingjia a{
 	margin-right: 0.2rem;
@@ -147,6 +148,7 @@ body{
 .kinerContent .kinerItem ul li .money-num .money{
 	display: block;
 	height: 0.7rem;
+	line-height: 0.4rem;
 }
 .kinerContent .kinerItem ul li .money-num .num{
 	font-weight: bold;
