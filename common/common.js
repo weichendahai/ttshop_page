@@ -85,97 +85,102 @@
 
 	//定义接口
 	//上传图片接口
+	var protocol = "http://";
+	var host = "localhost:8080/SpringWind/";
+	
+	var head_protocol_host = protocol+host;
+	
 	var UploadServlet = "http://h5.ciaotalking.com/upload/UploadServlet";
 	//获取用户信息
-	var getuserinfo = "http://"+huanjing+".ciaotalking.com/server/getuserinfo";
+	var getuserinfo = head_protocol_host+"server/getuserinfo";
 	//修改用户基本信息
-	var changeuserinfo= "http://"+huanjing+".ciaotalking.com/server/changeuserinfo";
+	var changeuserinfo= head_protocol_host+"server/changeuserinfo";
 	//获取订单列表
-	var getorderlist="http://"+huanjing+".ciaotalking.com/server/getorderlist";
+	var getorderlist=head_protocol_host+"server/getorderlist";
 	//获取订单详情
-	var getorderinfo="http://"+huanjing+".ciaotalking.com/server/getorderinfo";
+	var getorderinfo=head_protocol_host+"server/getorderinfo";
 	//取消订单
-	var cancelorder = "http://"+huanjing+".ciaotalking.com/server/cancelorder";
+	var cancelorder = head_protocol_host+"server/cancelorder";
 	//申请退款
-	var requestrefund="http://"+huanjing+".ciaotalking.com/server/requestrefund"
+	var requestrefund=head_protocol_host+"server/requestrefund"
 	//获取退款记录列表
-	var getrefundlist="http://"+huanjing+".ciaotalking.com/server/getrefundlist";
+	var getrefundlist=head_protocol_host+"server/getrefundlist";
 	//获取点评记录列表
-	var getuserevaluatelist= "http://"+huanjing+".ciaotalking.com/server/getuserevaluatelist";
+	var getuserevaluatelist= head_protocol_host+"server/getuserevaluatelist";
 	//删除收货地址接口
-	var removeaddress= "http://"+huanjing+".ciaotalking.com/server/removeaddress";
+	var removeaddress= head_protocol_host+"server/removeaddress";
 	//增加收货地址
-	var addaddress = "http://"+huanjing+".ciaotalking.com/server/addaddress";
+	var addaddress = head_protocol_host+"server/addaddress";
 	//编辑收货地址
- 	var editaddress = "http://"+huanjing+".ciaotalking.com/server/editaddress";
+ 	var editaddress = head_protocol_host+"server/editaddress";
 	//获取地址列表
-	var getaddresslist="http://"+huanjing+".ciaotalking.com/server/getaddresslist"
+	var getaddresslist=head_protocol_host+"server/getaddresslist"
 	//获取红包列表
-	var getgiftcard = "http://"+huanjing+".ciaotalking.com/server/getgiftcard";
+	var getgiftcard = head_protocol_host+"server/getgiftcard";
 	//获取优惠券列表
-	var getcoupon = "http://"+huanjing+".ciaotalking.com/server/getcoupon";
+	var getcoupon = head_protocol_host+"server/getcoupon";
 	//获取佣金列表
-	var getbonus = "http://"+huanjing+".ciaotalking.com/server/getbonus";
+	var getbonus = head_protocol_host+"server/getbonus";
 	//申请提现
-	var requestbonuspayment = "http://"+huanjing+".ciaotalking.com/server/requestbonuspayment"
+	var requestbonuspayment = head_protocol_host+"server/requestbonuspayment"
 	//banner接口
-	var bannerurl = "http://"+huanjing+".ciaotalking.com/server/getbannerlist";
+	var bannerurl = head_protocol_host+"server/getbannerlist";
 	//爆款列表接口
-	var hotitemlist = "http://"+huanjing+".ciaotalking.com/server/gethotitemlist";
+	var hotitemlist = head_protocol_host+"server/gethotitemlist";
 	//获取商品描述
-	var getiteminfo = "http://"+huanjing+".ciaotalking.com/server/getiteminfo";
+	var getiteminfo = head_protocol_host+"server/getiteminfo";
 	//获取商品详情
-	var getitemdesc = "http://"+huanjing+".ciaotalking.com/server/getitemdesc";
+	var getitemdesc = head_protocol_host+"server/getitemdesc";
 	//获取商品评价列表
-	var getitemevaluatelist = "http://"+huanjing+".ciaotalking.com/server/getitemevaluatelist";
+	var getitemevaluatelist = head_protocol_host+"server/getitemevaluatelist";
 	//加入购物车
-	var additemtocart = "http://"+huanjing+".ciaotalking.com/server/additemtocart";
+	var additemtocart = head_protocol_host+"server/additemtocart";
 	//获取购物车数据
-	var getcartitems = "http://"+huanjing+".ciaotalking.com/server/getcartitems";
+	var getcartitems = head_protocol_host+"server/getcartitems";
 	//改变购物车数量
-	var modifycartitem = "http://"+huanjing+".ciaotalking.com/server/modifycartitem";
+	var modifycartitem = head_protocol_host+"server/modifycartitem";
 	//停止购物车倒计时
-	var stopcartcd = "http://"+huanjing+".ciaotalking.com/server/stopcartcd";
+	var stopcartcd = head_protocol_host+"server/stopcartcd";
 	//恢复购物车倒计时
-	var resumecartcd = "http://"+huanjing+".ciaotalking.com/server/resumecartcd";
+	var resumecartcd = head_protocol_host+"server/resumecartcd";
 	//提交订单
-	var submitorder = "http://"+huanjing+".ciaotalking.com/server/submitorder";
+	var submitorder = head_protocol_host+"server/submitorder";
 	//试用列表
-	var getsamplelist= "http://"+huanjing+".ciaotalking.com/server/getsamplelist";
+	var getsamplelist= head_protocol_host+"server/getsamplelist";
 	//申请试用
-	var applysample = "http://"+huanjing+".ciaotalking.com/server/applysample";
+	var applysample = head_protocol_host+"server/applysample";
 	//写点评
-	var addevaluate = "http://"+huanjing+".ciaotalking.com/server/addevaluate";
+	var addevaluate = head_protocol_host+"server/addevaluate";
 	//点评详情
-	var getevaluateinfo = "http://"+huanjing+".ciaotalking.com/server/getevaluateinfo";
+	var getevaluateinfo = head_protocol_host+"server/getevaluateinfo";
 	//点评记录列表
-	var getuserevaluatelist = "http://"+huanjing+".ciaotalking.com/server/getuserevaluatelist";
+	var getuserevaluatelist = head_protocol_host+"server/getuserevaluatelist";
 	//热门搜索和常用搜索
-	var searchprepare = "http://"+huanjing+".ciaotalking.com/server/searchprepare";
+	var searchprepare = head_protocol_host+"server/searchprepare";
 	//搜索
-	var search = "http://"+huanjing+".ciaotalking.com/server/search";
+	var search = head_protocol_host+"server/search";
 	//榜单列表
-	var evaluateranking = "http://"+huanjing+".ciaotalking.com/server/evaluateranking";
+	var evaluateranking = head_protocol_host+"server/evaluateranking";
 	//立即购买
-	var buynow = "http://"+huanjing+".ciaotalking.com/server/buynow";
+	var buynow = head_protocol_host+"server/buynow";
 	//分享点评（基于系统分享，调用微信分享到朋友圈功能）
-	var sharedevaluate = "http://"+huanjing+".ciaotalking.com/server/sharedevaluate";
+	var sharedevaluate = head_protocol_host+"server/sharedevaluate";
 	//用户登录获取信息
-	var wxLogin ="http://"+huanjing+".ciaotalking.com/server/getwxinfo";
+	var wxLogin =head_protocol_host+"server/getwxinfo";
 	//写反馈
-	var submitfeedback= "http://"+huanjing+".ciaotalking.com/server/submitfeedback";
+	var submitfeedback= head_protocol_host+"server/submitfeedback";
 	//反馈列表
-	var getfeedback="http://"+huanjing+".ciaotalking.com/server/getfeedback";
+	var getfeedback=head_protocol_host+"server/getfeedback";
 	//阅读反馈
-	var readfeedback= "http://"+huanjing+".ciaotalking.com/server/readfeedback"
+	var readfeedback= head_protocol_host+"server/readfeedback"
 	//获取jssdk参数
-	var jssdk = "http://"+huanjing+".ciaotalking.com/server/getwxsdk";
+	var jssdk = head_protocol_host+"server/getwxsdk";
 	//APPid
 	var appid = "wx8bb77e77bbb27298";
 	//获取支付参数
-	var payforwx = "http://"+huanjing+".ciaotalking.com/server/payforwx";
+	var payforwx = head_protocol_host+"server/payforwx";
 	//支付回调接口
-	var paysuccess = "http://"+huanjing+".ciaotalking.com/server/paysuccess";
+	var paysuccess = head_protocol_host+"server/paysuccess";
 	//申请微信分享并后台记录
 	function goshare(user_id,evaluate_id){
 		$.ajax({
@@ -370,7 +375,12 @@
 	}
 	//微信登录
 	function getCodeForWechat(){
-	    var weChatCode=getQueryString("code");
+		var data = {};
+		data.item_count = 0;
+		data.user_id = 1559;
+		localStorage.setItem("shoppingcar",data.item_count);
+		localStorage.setItem("user_id",data.user_id);
+	    /*var weChatCode=getQueryString("code");
 	    	//alert(weChatCode)
 		    if(weChatCode==null){//如果参数没获取到重新登录
 		        var backUrl=encodeURIComponent(location.href);//解码当前地址
@@ -407,7 +417,8 @@
 		                },
 		            });
 		        }
-		    }
+		    }*/
+	
 	}
 
 $(function(){
